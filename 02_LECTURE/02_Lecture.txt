@@ -1,0 +1,80 @@
+﻿WEB DEVELOPMENT (2)
+
+
+* LAN , WAN AND WAN
+
+
+* LAN (Local Area Network) is a network that covers a small geographic area, such as a home, office, or building. It is usually owned and managed by a single organisation, and it allows devices to communicate with each other, share resources, and access the internet.
+* LAN (Local Area Network) एक छोटा नेटवर्क होता है जो एक ही इलाके के कंप्यूटरों को जोड़ता है। यह सीमित क्षेत्र में होता है जैसे कि एक कार्यालय या एक मकान।
+
+
+* WAN (Wide Area Network) is a network that covers a large geographic area, such as a city, country, or even the whole world. It is often made up of multiple interconnected LANs, and it uses public infrastructure, such as telephone lines, fibre-optic cables, or satellites, to connect different locations. The internet is an example of a WAN.
+* WAN (Wide Area Network) एक बड़ा नेटवर्क होता है जो एक शहर, एक देश या विश्व भर में फैला होता है। इसमें कई लोकल नेटवर्क शामिल होते हैं और यह दूरस्थ स्थानों के बीच संचार सुविधाओं को संभव बनाता है।
+   
+* MAN (Metropolitan Area Network) is a network that covers an intermediate geographic area, such as a town, city, or metropolitan area. It is larger than a LAN but smaller than a WAN, and it is usually owned and managed by a public or private organisation, such as a municipality or a university.
+* MAN (Metropolitan Area Network) एक मध्यम आकार का नेटवर्क होता है जो एक शहर या कुछ संबद्ध इलाकों में होता है। इसमें कई लोकल नेटवर्क शामिल होते हैं जो एक बड़े क्षेत्र को कवर करते हैं।
+
+
+
+
+
+
+* INTERNET
+              
+*  इंटरनेट (Internet) is a world-wide network that connects different networks together. Its main purpose is to connect communication, information exchange, knowledge, and services. The Internet is a modern technological tool that connects people all around the world.
+* इंटरनेट (Internet) एक विश्वव्यापी नेटवर्क है जो कई अलग-अलग नेटवर्कों को जोड़ता है। इसका मुख्य उद्देश्य संचार, सूचना विनिमय, जानकारी और सेवाओं को एक साथ जोड़ना होता है। इंटरनेट एक आधुनिक तकनीकी उपकरण है जो दुनिया भर में लोगों को जोड़ता है।
+
+
+* Through the internet, people can use email, online chat, video calling, social media, shopping, banking, and various other services. The internet has provided the world with a global platform that connects people for knowledge and communication.
+* इंटरनेट के माध्यम से लोग ईमेल, ऑनलाइन चैट, वीडियो कॉल, सामाजिक मीडिया, खरीदारी, बैंकिंग और विभिन्न अन्य सेवाओं का उपयोग कर सकते हैं। इंटरनेट ने दुनिया को एक ग्लोबल सामान्य मंच दिया है जो लोगों को ज्ञान और संचार के लिए एक साथ जोड़ता है।
+
+
+
+* WWW(WORLD WIDE WEB)                                       
+
+
+* WWW (World Wide Web) means a global network that provides access to all available information worldwide on the internet. The World Wide Web was developed by Tim Berners-Lee in 1989.
+*  WWW (World Wide Web) का हिंदी में अर्थ होता है विश्व व्यापी जाल। यह एक ऐसा माध्यम है जो इंटरनेट पर दुनिया भर में उपलब्ध सभी जानकारियों को उपयोगकर्ताओं को प्रदान करता है। विश्व व्यापी जाल को टिम बर्नर्स-ली के द्वारा 1989 में विकसित किया गया था।
+
+
+
+
+* BROWSER
+
+
+* ब्राउज़र (Browser) means a software application used to communicate on the internet. The main purpose of a browser is to view web pages, search them, communicate with them and download data from the internet. Examples of browsers include Google Chrome, Mozilla Firefox, Safari, Opera, etc.
+* ब्राउज़र (Browser) का हिंदी अर्थ होता है अभिलेखनकर्ता। यह एक सॉफ्टवेयर ऐप्लिकेशन होता है जो इंटरनेट पर संचार करने के लिए उपयोग किया जाता है। ब्राउज़र का मुख्य उद्देश्य वेब पेज्स देखना, उन्हें खोजना, संचार करना और इंटरनेट से डेटा डाउनलोड करना होता है। उदाहरण के लिए, गूगल क्रोम, मोज़िला फ़ायरफ़ॉक्स, सफारी, ओपेरा इत्यादि ब्राउज़र हैं।
+
+
+* Google Chrome uses the Blink rendering engine, which is a fork of the WebKit rendering engine.
+* Mozilla Firefox uses the Gecko rendering engine.
+* Apple Safari uses the WebKit rendering engine.
+* Opera uses the Blink rendering engine, which is a fork of the WebKit rendering engine.
+
+
+* "Fork" का हिंदी अर्थ होता है "शाखा" या "फोर्क"। यह एक सॉफ्टवेयर डेवलपमेंट टर्म होता है जो सॉफ्टवेयर को उसके मूल रूप से कॉपी न करते हुए उसमें बदलाव करते हुए नया सॉफ्टवेयर विकसित करने को कहते हैं।
+* जब कोई सॉफ्टवेयर इंजन "fork" किया जाता है तो उसके मूल इंजन से अलग-अलग फीचर और बदलाव करके नया इंजन विकसित किया जाता है। इसी तरह, Chrome और Opera इंजन वेबकिट से "fork" किया गया है जिससे Blink इंजन विकसित किया गया है।
+
+
+
+
+
+* CLIENT & SERVER
+
+
+* In English, a Client is a software or hardware device that communicates with a Server in order to request a service or resource. This request is made using a transport protocol such as HTTP, FTP, etc. For example, a web browser that requests information from a website from a server is a client.
+* एक Client एक सॉफ्टवेयर या हार्डवेयर डिवाइस होता है जो एक Server से संचार करता है ताकि उसे सेवा या रिसोर्स के लिए अनुरोध कर सकें। यह अनुरोध ट्रांसपोर्ट प्रोटोकॉल का उपयोग करके होता है जैसे HTTP, FTP इत्यादि। उदाहरण के लिए, एक वेब ब्राउज़र जो वेबसाइट से जानकारी प्राप्त करने के लिए सर्वर से अनुरोध करता है, वह एक Client होता है।
+
+
+* A Server is a software or hardware system that operates services or resources that are referred to by clients. The server operates on a network and communicates with its clients in order to respond to their requests. For example, an email server that helps an email client retrieve emails from their email account is a server.
+* एक Server एक सॉफ्टवेयर या हार्डवेयर सिस्टम होता है जो सेवाओं या रिसोर्सों को संचालित करता है जो Clients को संदर्भित करते हैं। सर्वर एक नेटवर्क पर काम करता है और अपने क्लाइंटों के साथ संचार करता है ताकि उन्हें उनकी मांग के अनुसार जवाब दिया जा सके। उदाहरण के लिए, एक ईमेल सर्वर जो एक ईमेल क्लाइंट को उनके ईमेल खाते से ईमेल प्राप्त करने में मदद करता है, वह एक Server होता है।
+
+
+* DNS (Domain Name System) is an internet protocol that maps domain names to IP addresses available on the internet. When you type a website name in your browser to reach it, the browser uses DNS to find the IP address of that website so that you can access it.
+* DNS (Domain Name System) एक इंटरनेट प्रोटोकॉल है जो डोमेन नामों को इंटरनेट पर उपलब्ध आईपी एड्रेसों से मैप करता है। जब आप एक वेबसाइट तक पहुंचने के लिए अपने ब्राउज़र में उस वेबसाइट का नाम टाइप करते हैं, तो ब्राउज़र DNS के माध्यम से उस वेबसाइट के आईपी एड्रेस को खोजता है ताकि आप उस वेबसाइट तक पहुंच सकें।
+
+
+* DNR (Domain Name Registration) is a service that registers domain names and associates them with various website and web hosting services. When you purchase a new domain name, you use the DNR service to register that name.
+* DNR (Domain Name Registration) एक सेवा है जो डोमेन नाम की पंजीकरण करती है और उन्हें विभिन्न वेबसाइट और वेब होस्टिंग सेवाओं के साथ जोड़ती है। जब आप एक नया डोमेन नाम खरीदते हैं, तो आप उस नाम की पंजीकरण करने के लिए DNR सेवा का उपयोग करते हैं।
+* Domain is an identifier for a website that is available on the internet. A domain name is used in the search for the website so that people can easily remember it and access it. A domain name is a unique name that makes the website available on the internet.
+* Domain एक वेबसाइट के आईडेंटिफायर होता है जो इंटरनेट पर उपलब्ध होता है। एक डोमेन नाम का उपयोग उस वेबसाइट की खोज में किया जाता है ताकि लोग इसे आसानी से याद रख सकें और उस वेबसाइट तक पहुंच सकें। डोमेन नाम एक यूनिक नाम होता है जो वेबसाइट को इंटरनेट पर उपलब्ध बनाता है।

@@ -1,0 +1,138 @@
+👉 Emmet, Div Tag, Lists and Anchor Tag Variations
+✴️ Emmet Documention 🔗https://docs.emmet.io/
+✴️ how to nav inline and bookmarks :- Homework
+
+
+
+✴️ Block Element :- 
+
+<h1> to <h6>: Headings
+<p>: Paragraph
+<div>: Division or section
+<ul>: Unordered list
+<ol>: Ordered list
+<li>: List item
+<table>: Table
+<thead>: Table header
+<tbody>: Table body
+<tfoot>: Table footer
+<tr>: Table row
+<th>: Table header cell
+<td>: Table data cell
+<form>: Form
+<input>: Input field
+<label>: Label for an input field
+<button>: Button
+<textarea>: Text area
+<select>: Drop-down list
+<option>: Option within a drop-down list
+<fieldset>: Group of form controls
+<legend>: Title for a group of form controls
+<blockquote>: Block quotation
+<cite>: Citation for a block quotation
+<pre>: Preformatted text
+<address>: Address
+<section>: Section
+<article>: Article
+<aside>: Aside content
+<header>: Header content
+<footer>: Footer content
+<nav>: Navigation links
+<main>: Main content of a web page
+
+✴️ Inline Element :- 
+
+
+<a>: Anchor or hyperlink
+<strong>: Strong emphasis
+<em>: Emphasis
+<span>: Generic inline container
+<img>: Image
+<br>: Line break
+<hr>: Horizontal rule
+<input>: Input field
+<label>: Label for an input field
+<select>: Drop-down list
+<option>: Option within a drop-down list
+<textarea>: Text area
+<button>: Button
+<code>: Inline code
+<sup>: Superscript
+<sub>: Subscript
+<small>: Smaller text size
+<cite>: Citation
+<q>: Short inline quotation
+<abbr>: Abbreviation
+<del>: Deleted text
+<ins>: Inserted text
+<mark>: Highlighted text
+<time>: Time or date stamp.
+<var>: Variable or placeholder text
+<kbd>: Keyboard input
+<samp>: Sample output
+<bdo>: Bidirectional override
+<i>: Italicized text
+<u>: Underlined text
+<s>: Strikethrough text
+<strong>: Strongly emphasized text
+<em>: Emphasized text
+<code>: Code snippet or code inline
+<cite>: Citation
+<q>: Inline quotation
+<dfn>: Definition term
+<abbr>: Abbreviation
+<data>: Machine-readable data
+<time>: Time or date stamp
+<sub>: Subscript text
+<sup>: Superscript text
+<span>: Generic inline container
+<a>: Anchor or hyperlink
+<br>: Line break
+<wbr>: Word break opportunity
+<img>: Image
+<map>: Image map
+<area>: Area in an image map
+<audio>: Audio file
+<source>: Media source
+<video>: Video file
+<track>: Text track
+<iframe>: Inline frame
+<object>: Embedded object
+<param>: Parameter for an embedded object
+<embed>: External application or interactive content
+<mark>: Highlighted text
+<ruby>: Ruby annotation
+<rt>: Ruby text
+<rp>: Ruby parentheses
+<svg>: Scalable vector graphics
+<math>: Mathematical notation.
+<canvas>: Area for graphics drawing
+<meter>: Measurement within a range
+<progress>: Progress indicator
+<ins>: Inserted text
+<del>: Deleted text
+<details>: Disclosure widget
+<summary>: Summary of a details element
+<dialog>: Dialog box or window
+<menu>: Menu list
+<menuitem>: Item within a menu
+<nobr>: Non-breaking text
+<spacer>: Empty space
+<b>: Bold text
+<big>: Large text size
+<small>: Small text size
+<u>: Underlined text
+<strike>: Strikethrough text
+<font>: Text font, size, and color
+<basefont>: Base font for a page
+<tt>: Teletype or monospace text
+<center>: Centered text
+<marquee>: Moving text or image
+<blink>: Blinking text
+<bdi>: Bi-directional isolation of text
+<bdo>: Bi-directional text override
+<content>: Placeholder for content to be added with JavaScript
+<element>: Custom element
+<slot>: Placeholder for content in a web component
+<template>: Content that can be cloned and inserted elsewhere
+<wbr>: Word break opportunity

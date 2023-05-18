@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+    <form>
+       <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" ><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" ><br>
+        <label for="Phone">Phone:</label><br>
+        <input type="tel" id="Phone" ><br><br>
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth">
+       <br><br><span>Gender:</span>
+        <label for="radio">Male</label>
+        <input type="radio" name="radio" id="radio1">
+        
+        <label for="radio2">Female</label>
+        <input type="radio" name="radio" id="radio2"><br>
+         
+        <br><label for="country">Country:</label>
+        <select name="country" id="country">
+            <option>Select</option>
+            <option value="us">Us</option>
+            <option value="india">India</option>
+            <option value="japan">Japan</option>
+         </select><br><br>
+       </fieldset>
+
+       <fieldset>
+        <legend>Address:</legend>
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br>
+        <label for="state">State:</label><br>
+        <input type="text" id="street" name="state"><br>
+        <label for="code">Zip Code:</label><br>
+        <input type="text" id="code" name="code"><br>
+       </fieldset>
+       <fieldset>
+        <legend>Other Information</legend>
+        
+        <label for="comment">Comments:</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <label for="terms">I agree to the terms of service:</label>
+        <input type="checkbox" name="terms" id="terms">
+       </fieldset>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

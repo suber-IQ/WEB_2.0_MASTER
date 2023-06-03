@@ -1,0 +1,8 @@
+Box Model :
+    - content
+    - Padding
+    - border
+    - margin
+
+Homework
+  what is Box-sizing :- border-box why good paractice to use

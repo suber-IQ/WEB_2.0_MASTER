@@ -1,0 +1,30 @@
+*️⃣ Block element:-
+ 1. new line
+ 2. width:-> Extream left -> Extream right  space availabel acuquire
+ 3. Custom width/height to respect
+ 4. Custom Margin/Padding respect
+
+ 🌟 Block-level element
+
+ Some common examples of block-level elements in HTML are:
+
+1. <div>: A generic container element used to group other HTML elements.
+2. <p>: Represents a paragraph of text.
+3. <h1> to <h6>: Heading elements used to define different levels of headings.
+4. <ul>: Represents an unordered list.
+5. <ol>: Represents an ordered list.
+6. <li>: Represents a list item within an unordered or ordered list.
+7. <table>: Represents tabular data.
+8. <form>: Represents a form for user input.
+9. <header>, <footer>, <nav>, <article>, <section>: Semantic elements used for structuring different parts of a webpage.
+
+*️⃣ Inline elements
+ 1. Same line try
+ 2. width take content available
+ 3. custom width/height not apply inline elements
+ 4. custom margin not apply only top and bottom ( only use horizontal work But not work Vertical)
+ 5. custom padding apply
+
+*️⃣ Inline-block properties
+ -> behavior inline
+ -> Custom width/height 

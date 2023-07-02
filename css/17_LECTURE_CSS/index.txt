@@ -1,0 +1,15 @@
+*️⃣ Relative -> Current window
+    1. top
+    2. left
+    3. right
+    4. bottom
+   5. Gap maintained
+*️⃣ Absolute -> relative to its closest positioned ancestor
+    1. top
+    2. left
+    3. right
+    4. bottom
+    5. Not gap maintained
+*️⃣ Fixed and Sticky
+ 1. Sticky is relative to parent container
+ 2. Fixed always webpage on Fixed doesn't matter any div parent or another container

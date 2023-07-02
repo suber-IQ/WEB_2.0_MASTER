@@ -1,0 +1,33 @@
+
+*️⃣ Relative Css size Unit
+
+1. em: The em unit is relative to the font size of the parent element. For example, if the font size of a parent element is set to 16 pixels, 1em would be equal to 16 pixels, 0.5em would be equal to 8 pixels, and so on.
+
+2. rem: The rem unit is similar to em, but it is relative to the root element's font size rather than the parent element. This can be useful when you want to define sizes based on a consistent baseline. For example, if the root font size is set to 16 pixels, 1rem would be equal to 16 pixels regardless of the nesting level.
+
+3. %: The percentage unit is relative to the size of the parent element. For example, if you set the width of an element to 50%, it will take up half the width of its parent element.
+
+4. vw/vh: These units are relative to the viewport width (vw) or viewport height (vh). For example, if you set the width of an element to 50vw, it will take up 50% of the viewport width. This can be useful for creating responsive designs.
+
+5. vmin/vmax: These units are relative to the smaller dimension (vmin) or larger dimension (vmax) of the viewport. For example, if you set the font size of an element to 5vmin, it will be 5% of the smaller dimension of the viewport. This can be helpful when you want to maintain a consistent size relative to the viewport.
+
+
+
+*️⃣ Absolute Css Size Unit
+
+
+
+1. **px**: The `px` unit stands for pixels and is the most commonly used absolute size unit. One pixel represents a single dot on a screen. You can specify sizes using a specific number of pixels, such as `10px` or `20px`.
+
+2. **in**: The `in` unit represents inches. One inch is equal to 96 pixels. For example, if you set the width of an element to `2in`, it will be 192 pixels wide (2 * 96).
+
+3. **cm**: The `cm` unit represents centimeters. One centimeter is equal to 37.8 pixels (approximately). For example, if you set the height of an element to `5cm`, it will be approximately 189 pixels tall (5 * 37.8).
+
+4. **mm**: The `mm` unit represents millimeters. One millimeter is equal to 3.78 pixels (approximately). For example, if you set the margin of an element to `10mm`, it will be approximately 38 pixels (10 * 3.78).
+
+5. **pt**: The `pt` unit represents points. One point is equal to 1.33 pixels (approximately). For example, if you set the font size of an element to `12pt`, it will be approximately 16 pixels tall (12 * 1.33).
+
+6. **pc**: The `pc` unit represents picas. One pica is equal to 16 points. For example, if you set the width of an element to `6pc`, it will be 96 points wide (6 * 16) and approximately 128 pixels (96 * 1.33).
+
+
+👉 ppi vs dpi  (Homework)

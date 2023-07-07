@@ -1,0 +1,21 @@
+short handProperties 
+
+flex: flew-grow flex-shrink flex-basis
+
+*️⃣ flex-item
+
+. order
+. flex-grow
+. flex-shrink
+. flex-basis
+. flex
+. align-self
+
+*️⃣ flex-container
+. display
+. flex-direction
+. flex-wrap
+. flex-flow
+. align-items
+. justify-content
+. align-content

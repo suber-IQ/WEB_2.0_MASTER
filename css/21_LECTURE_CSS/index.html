@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries and Custom Variable</title>
+    <style>
+      .box{
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        border: 2px solid grey;
+      }
+      /*👉 Above 500 */
+      /* @media (min-width: 500px) { 
+        .box{
+           background-color: green;
+        }
+      } */
+      /*👉 Below 500 */
+      /* @media (max-width: 500px) {
+        .box{
+          background-color: black;
+        }
+      } */
+      /*👉 from 300 to 500 */
+      @media (min-width: 300px) and (max-width: 500px) {
+         .box{
+          /* background-color: blueviolet; */
+          background-color: red;
+         }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="box">
+      Hello Suber-IQ
+    </div>
+  </body>
+</html>

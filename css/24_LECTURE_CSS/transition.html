@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Transition Effects Css</title>
+      <style>
+            .box{
+                  width: 400px;
+                  height: 400px;
+                  background-color: beige;
+                  border: 2px solid black;
+
+                  /* transition-property: width; */
+                  /* transition-property: all; */
+                  /* transition-duration: 3s; */
+                  /* transition-delay: 1s; */
+                  /* transition-timing-function: linear; */
+             /* 👉 property name | duration | easing function | delay */     
+             /* transition: all 3s ease-in-out  1s; */
+             transition: width 2s, height 5s;
+            }
+            .box:hover{
+                  width: 1440px;
+                  height: 700px;
+                  background-color: blue;
+            }
+      </style>
+</head>
+<body>
+      <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Box and Text Shadow</title>
+      <style>
+            :root{
+                  --primary-color: brown;
+                  --custom-width: 330px;
+            }
+            .container{
+                  background-color: beige;
+                  height: 650px;
+                  border: 2px solid black;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            }
+            .box{
+                  background-color: aquamarine;
+                  width: 330px;
+                  height: 330px;
+                  border: 1px solid brown;
+                  margin: 5px;
+                  padding: 5px;
+                  /*👉 offset-x | offset-y | color */
+                  /* box-shadow: 5px 5px rgb(12, 10, 67); */
+                  /*👉 Negative offset-x | offset-y | color */
+
+                  /* box-shadow: -5px -5px rgb(30, 26, 154); */
+
+                  /*👉 offset-x | offset-y | blur-radius | color */
+                  /* box-shadow: 10px 10px 5px  blue; */
+
+                  /*👉 offset-x | offset-y | blur-radius | spread-radius | color */
+                  /* box-shadow: 10px 10px 5px 9px blue; */
+
+                  /* box-shadow: inset 10px 15px var(--primary-color) */
+            }
+            h2{
+                  text-shadow: #FC0 1px 0 10px;
+            }
+            p{
+                  /* color | offset-x | offset-y | blur-radius */
+                  /* color | offset-x | offset-y */
+                  /* text-shadow: #FC0 1px 0 10px; */
+                  /* text-shadow: 5px 5px #558ABB; */
+            }
+            img{
+                  width: 100px;
+
+            }
+
+            
+      </style>
+</head>
+<body>
+      <div class="container">
+            <div class="box">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.UJg7816ozCB-u-xWZkQNBAHaHa%26pid%3DApi&f=1&ipt=04e4d4629f9183e111f3ea69cc356e7425d7c8e77b7a523aae02b0d6430618b2&ipo=images">
+                  <h2>Welcome to Suber-IQ</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, impedit labore aspernatur perferendis facilis nostrum? Alias repellendus nostrum delectus atque? Deleniti amet ipsum est officiis eius iure, incidunt necessitatibus ipsa!</p>
+            </div>
+      </div>
+</body>
+</html>

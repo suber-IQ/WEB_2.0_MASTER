@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+:root{
+      --primaryColor: #588157;
+      --secondaryColor: #7e9f7e;
+      --darkColor: #344e41;
+      --brandColor: #f6bd60;
+      --headerBgColor: linear-gradient(to right, #6699ff 0%, #ccff66 100%);
+      --footerBgColor: linear-gradient(to left, #9999ff 0%, #66ffcc 100%);
+}
+body{
+      font-family: 'Lato', sans-serif;
+}
+ul{
+      list-style: none;
+}
+a{
+      text-decoration: none;
+}
+
+.container{
+      width: 80%;
+      margin: 0 auto;
+}
+
+
+/* 👉 NavBar */
+.navContainer{
+      background: var(--headerBgColor);
+}
+.navContainer > nav{
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#navLogo > h1 > a{
+      color: var(--darkColor);
+}
+.navContainer > nav > ul{
+ display: flex;
+ gap: 1rem;
+}
+.navContainer > nav > ul > li > a{
+      color: var(--primaryColor);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s;
+}
+.navContainer > nav > ul > li > a:hover{
+      color: var(--secondaryColor);
+}
+
+/* 👉 Main Content box */
+
+.contentBox{
+      width: 70%;
+      margin: 0.9rem auto;
+      padding: 2rem;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.514);
+      display: flex;
+}
+
+.contentBox .leftContent > h2{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--brandColor);
+}
+.contentBox .leftContent .recipeIngredients{
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+}
+.contentBox .leftContent .recipeIngredients > h3{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: var(--secondaryColor);
+}
+.contentBox .leftContent .recipeIngredients > ul > li{
+      font-size: 1.2rem;
+      font-weight: 600;
+}
+.contentBox .leftContent .recipe{
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+}
+.contentBox .leftContent .recipe > h3{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: var(--secondaryColor);
+}
+.contentBox .leftContent .recipe > ol > li{
+      font-size: 1.2rem;
+}
+.contentBox .rightContent {
+      /* border: 2px solid green; */
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.contentBox .rightContent > img{
+      width: 300px;
+      height: 300px;
+      border-radius: 0.5rem;
+      transition: all 0.4s;
+}
+.contentBox .rightContent > img:hover{
+      transform: scale(1.1);
+}
+/* 👉 Footer */
+.footerBox{
+width: 100%;
+background: var(--footerBgColor);
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 40px;
+}
+.footerBox > p{
+      color: var(--darkColor);
+      font-size: 1.2rem;
+}

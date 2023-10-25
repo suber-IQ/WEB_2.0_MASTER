@@ -2,9 +2,9 @@ const ctx = document.getElementById("linechart");
 const ctx2 = document.getElementById("doughnutchart");
 const ctx3 = document.getElementById("polararea");
 
-Chart.defaults.color = "white"
+Chart.defaults.color = "white";
 
-new Chart(ctx, {
+let myChart = new Chart(ctx, {
   type: "line",
   data: {
     labels: [
@@ -100,4 +100,42 @@ new Chart(ctx3, {
       },
     },
   },
+});
+
+
+document.getElementById("light_mode").addEventListener("click", function(){
+      Chart.defaults.color = "#161616";
+     
+      document.getElementById("main").style.backgroundColor="#e1e0e0";
+      document.getElementById("main_area").style.backgroundColor="white";
+      document.getElementById("sidebar").style.backgroundColor="white";
+      document.getElementById("sidebar").style.color="#161616";
+      document.getElementById("main_area").style.color="#161616";
+
+
+     let boxes = document.getElementsByClassName("box");
+     for(let i = 0; i < boxes.length; i++){
+        boxes[i].style.backgroundColor="#e1e0e0";
+        boxes[i].style.color="#161616";
+     }
+     document.getElementById("dark_mode").parentElement.style.display="block";
+     document.getElementById("light_mode").parentElement.style.display="none";
+      
+});
+document.getElementById("dark_mode").addEventListener("click", function(){
+      Chart.defaults.color = "white";
+      document.getElementById("main").style.backgroundColor="#3d3d3d";
+      document.getElementById("main_area").style.backgroundColor="#161616";
+      document.getElementById("sidebar").style.backgroundColor="#161616";
+      document.getElementById("sidebar").style.color="white";
+      document.getElementById("main_area").style.color="white";
+
+
+     let boxes = document.getElementsByClassName("box");
+     for(let i = 0; i < boxes.length; i++){
+        boxes[i].style.backgroundColor="#3d3d3d";
+        boxes[i].style.color="white";
+     }
+     document.getElementById("dark_mode").parentElement.style.display="none";
+     document.getElementById("light_mode").parentElement.style.display="block";
 });

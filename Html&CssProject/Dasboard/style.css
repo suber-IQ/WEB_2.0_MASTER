@@ -72,6 +72,18 @@
    color: white;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    padding: 20px;
+   overflow-y: scroll;
+}
+.main_area::-webkit-scrollbar{
+      width: 8px;
+}
+/* ::-webkit-scrollbar-track{
+      background-color: red;
+
+} */
+.main_area::-webkit-scrollbar-thumb{
+    background-color: #4a85f8;
+    border-radius: 30px;
 }
 .header{
      width: 100%;
@@ -139,4 +151,25 @@
       /* padding: 20px;
       background-color: #3d3d3d;
       border-radius: 10px; */
+}
+/* 👉 product css */
+.products{
+      width: 100%;
+      padding: 20px;
+      background-color: #3d3d3d;
+      border-radius: 10px;
+      margin-top: 20px;
+}
+.table{
+      width: 100%;
+      margin-top: 10px;
+}
+th{
+      padding: 20px 0;
+      text-align: center;
+}
+td{
+      border-top: 1px solid #161616;
+      padding: 20px 0;
+      text-align: center;
 }

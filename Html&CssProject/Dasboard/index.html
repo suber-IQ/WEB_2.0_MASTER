@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="main">
+    <main class="main" id="main">
       <!--👉 sidebar -->
 
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
         <div class="logo">
           <p>Dashboard</p>
         </div>
@@ -30,7 +30,7 @@
           <li><i class="fa-solid fa-money-check-dollar"></i>Refunds</li>
         </ul>
       </div>
-      <div class="main_area">
+      <div class="main_area" id="main_area">
         <!--👉 Header -->
         <header class="header">
           <div class="intro">
@@ -43,11 +43,13 @@
             />
             <p>Rashmika</p>
             <p>Logout</p>
+            <p><i id="light_mode" class="fa-solid fa-sun" style="color: yellow;" title="Switch To Light Mode"></i></p>
+            <p style="display: none;"><i id="dark_mode" class="fa-solid fa-moon" style="color: darkgray;" title="Switch To Night Mode"></i></p>
           </div>
         </header>
         <!--👉 Stats -->
         <div class="stats">
-          <div class="stat">
+          <div class="stat box">
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Total Sales</p>
             <h1><i class="fa-solid fa-indian-rupee-sign"></i>40,40000</h1>
             <p>
@@ -55,7 +57,7 @@
               20% More Than Last Month
             </p>
           </div>
-          <div class="stat">
+          <div class="stat box">
             <p><i class="fa-solid fa-hand-holding-dollar"></i>Total Revenue</p>
             <h1><i class="fa-solid fa-indian-rupee-sign"></i>20,90000</h1>
             <p>
@@ -63,7 +65,7 @@
               30% More Than Last Month
             </p>
           </div>
-          <div class="stat">
+          <div class="stat box">
             <p><i class="fa-solid fa-people-group"></i>New Customers Joined</p>
 
             <h1><i class="fa-solid fa-indian-rupee-sign"></i> 9,050</h1>
@@ -73,7 +75,7 @@
               50% Less Than Last Month
             </p>
           </div>
-          <div class="stat">
+          <div class="stat box">
             <p><i class="fa-solid fa-people-group"></i> Old Client Funds</p>
 
             <h1><i class="fa-solid fa-indian-rupee-sign"></i> 70,0000</h1>
@@ -87,22 +89,68 @@
         <!-- 👉 chart area -->
         <div class="charts">
 
-        <div class="line_chart">
+        <div class="line_chart box">
           <canvas id="linechart"></canvas>
         </div>
-        <div class="polar_area">
+        <div class="polar_area box">
             <canvas id="polararea"></canvas>
         </div>
-        <div class="doughnut_chart">
+        <div class="doughnut_chart box">
             <canvas id="doughnutchart"></canvas>
         </div>
       </div>
 
       <!--👉 top products area -->
-         <div class="products">
-
-         </div>
-
+         <div class="products box">
+              <h1>Top Product This Month</h1>
+         <table class="table">
+            <thead>
+                   <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Vendor</th>
+                        <th>Sales</th>
+                   </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>1</td>
+                        <td>Vivo z1 pro</td>
+                        <td>15000</td>
+                        <td>145</td>
+                        <td>Vivo</td>
+                        <td>60%</td>
+                  </tr>
+                  <tr>
+                        <td>2</td>
+                        <td>Samsung Galaxy M21</td>
+                        <td>13000</td>
+                        <td>200</td>
+                        <td>Samsung</td>
+                        <td>20%</td>
+                  </tr>
+                  <tr>
+                        <td>3</td>
+                        <td>Motorola Edge 40</td>
+                        <td>25000</td>
+                        <td>80</td>
+                        <td>Motorola</td>
+                        <td>25%</td>
+                  </tr>
+                  <tr>
+                        <td>4</td>
+                        <td>Realme 11 Pro 5G</td>
+                        <td>25000</td>
+                        <td>800</td>
+                        <td>Realme</td>
+                        <td>55%</td>
+                  </tr>
+            </tbody>
+         </table>
+      </div>
+         
       </div>
     </main>
 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page - Facebook </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 👉 Navigation  -->
+    <nav>
+      <div class="nav-left">
+            <a href="index.html">
+                  <img src="images/facebook.png" alt="logo" class="logo" />
+                </a>
+        <ul>
+          <li><img src="images/notification.png" alt="notification" /></li>
+          <li><img src="images/inbox.png" alt="notification" /></li>
+          <li><img src="images/video.png" alt="notification" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="searchicon" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9wpX9zrtSFO1ZF9yezrAngHaHa%26pid%3DApi&f=1&ipt=5cd45422545e51deb4cf54d71e4eb2b8eb08465b88825642cb1e1ab0d37dc4c1&ipo=images"
+            alt="profile"
+          />
+        </div>
+      </div>
+      <!-- *****************Setting Menu************** -->
+      <div class="settings-menu">
+            <div id="dark-btn">
+                  <span></span>
+            </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9wpX9zrtSFO1ZF9yezrAngHaHa%26pid%3DApi&f=1&ipt=5cd45422545e51deb4cf54d71e4eb2b8eb08465b88825642cb1e1ab0d37dc4c1&ipo=images"
+              alt="profilepic"
+            />
+            <div>
+              <p>John Doe</p>
+              <a href="profile.html">See Your Profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="profilepic" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help use to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="images/setting.png" alt="setting" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="images/arrow.png" alt="arrow" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/help.png" alt="help" class="settings-icon">
+            <a href="#">Help & Support<img src="images/arrow.png" alt="arrow" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/display.png" alt="display" class="settings-icon">
+            <a href="#">Display & Accessibility<img src="images/arrow.png" alt="arrow" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/logout.png" alt="logout" class="settings-icon">
+            <a href="#">Logout<img src="images/arrow.png" alt="arrow" width="10px"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************** Profile Page **************** -->
+
+    <div class="profile-container">
+         <img src="images/cover.png" alt="coverimg" class="cover-img">
+         <div class="profile-details">
+            <div class="pd-left">
+                  <div class="pd-row">
+                        <img src="images/profile.png" alt="profile" class="pd-image">
+                        <div>
+                              <h3>Sumit kumar</h3>
+                              <p>250 Friends - 25 mutual</p>
+                              <img src="images/member-1.png" alt="member1">
+                              <img src="images/member-2.png" alt="member2">
+                              <img src="images/member-3.png" alt="member3">
+                              <img src="images/member-4.png" alt="member4">
+                        </div>
+                  </div>
+            </div>
+            <div class="pd-right">
+                  <button type="button">
+                    <img src="images/add-friends.png" alt="addfriends">    Friends
+                  </button>
+                  <button type="button">
+                        <img src="images/message.png" alt="message"> Message
+                  </button>
+                  <br>
+                  <a href="#"><img src="images/more.png" alt="more"></a>
+            </div>
+         </div>
+         <div class="profile-info">
+            <div class="info-col">
+
+                  <div class="profile-intro">
+                        <h3>Intro</h3>
+                        <p class="intro-text">Belive in yourself and you can do unbelievable things. <img src="images/feeling.png" alt="feeling"></p>
+                        <hr>
+                        <ul>
+                              <li> <img src="images/profile-job.png" alt="profileJob"> Director at Storage media pvt Ltd</li>
+                              <li> <img src="images/profile-study.png" alt="profileStudy"> Studied at oxford University</li>
+                              <li> <img src="images/profile-study.png" alt="profileStudy"> Went to Narayan Mahavidhlay</li>
+                              <li> <img src="images/profile-home.png" alt="profileHome"> Live in Jaipur, India</li>
+                              <li> <img src="images/profile-location.png" alt=""> From Bihar, India</li>
+                        </ul>
+                  </div>
+                  <div class="profile-intro">
+                        <div class="title-box">
+                              <h3>Photos</h3>
+                              <a href="#">All Photos</a>
+                        </div>
+                        <div class="photo-box">
+                              <div><img src="images/photo1.png" alt="photo1"></div>
+                              <div><img src="images/photo2.png" alt="photo2"></div>
+                              <div><img src="images/photo3.png" alt="photo3"></div>
+                              <div><img src="images/photo4.png" alt="photo4"></div>
+                              <div><img src="images/photo5.png" alt="photo5"></div>
+                              <div><img src="images/photo6.png" alt="photo6"></div>
+                        </div>
+                  </div>
+                  <div class="profile-intro">
+                        <div class="title-box">
+                              <h3>Friends</h3>
+                              <a href="#">All Friends</a>
+                        </div>
+                        <p>220 (25 mutual)</p>
+                        <div class="friends-box">
+                              <div><img src="images/member-1.png" alt="member-1"> <p>Sara N</p> </div>
+                              <div><img src="images/member-2.png" alt="member-2"> <p>Sarah N</p> </div>
+                              <div><img src="images/member-3.png" alt="member-3"> <p>Rani D</p> </div>
+                              <div><img src="images/member-4.png" alt="member-4"> <p>Emil L</p> </div>
+                              <div><img src="images/member-5.png" alt="member-5"> <p>David E</p> </div>
+                              <div><img src="images/member-6.png" alt="member-6"> <p>Jessica A</p> </div>
+                              <div><img src="images/member-7.png" alt="member-7"> <p>William M</p> </div>
+                              <div><img src="images/member-8.png" alt="member-8"> <p>Olivia C</p> </div>
+                              <div><img src="images/member-9.png" alt="member-9"> <p>James Doe</p> </div>
+                        </div>
+                  </div>
+                 
+            </div>
+            <div class="post-col">
+                  <div class="write-post-container">
+                        <div class="user-profile">
+                          <img src="images/profile-pic.png" alt="profilepic" />
+                          <div>
+                            <p>John Doe</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                          </div>
+                        </div>
+                        <div class="post-input-container">
+                          <textarea
+                            rows="3"
+                            placeholder="What's on your mind, John?"
+                          ></textarea>
+                          <div class="add-post-links">
+                            <a href="#"
+                              ><img src="images/live-video.png" alt="liveVideo" /> Live
+                              Video</a
+                            >
+                            <a href="#"
+                              ><img src="images/photo.png" alt="photo" /> Photo/Video</a
+                            >
+                            <a href="#"
+                              ><img src="images/feeling.png" alt="felling" />
+                              Felling/Activity</a
+                            >
+                          </div>
+                        </div>
+                  </div>
+                  <div class="post-container">
+                        <div class="post-row">
+                          <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profilepic" />
+                            <div>
+                              <p>John Doe</p>
+                              <span>April 25 2024, 14:50 pm </span>
+                            </div>
+                          </div>
+                          <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                        </div>
+              
+                        <p class="post-text">
+                          Subscribe <span> @Suber-IQ </span> Video instgram to watch status on
+                          Web App Development and UX/UI Design
+                          <a href="#">#Suberiq</a>
+                          <a href="#">#YoutubeChannel</a>
+                        </p>
+                        <img src="images/feed-image-1.png" alt="feed1" class="post-img" />
+                        <div class="post-row">
+                          <div class="activity-icons">
+                            <div>
+                              <img src="images/like-blue.png" alt="like" />
+                              120
+                            </div>
+                            <div>
+                              <img src="images/comments.png" alt="comments" />
+                              33
+                            </div>
+                            <div>
+                              <img src="images/share.png" alt="share" />
+                              50
+                            </div>
+                          </div>
+                          <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile" />
+                            <i class="fa-solid fa-caret-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="post-container">
+                        <div class="post-row">
+                          <div class="user-profile">
+                            <img
+                              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.hdQ-3P8FFoH9PVzM0_YQaAHaHD%26pid%3DApi&f=1&ipt=879b356f856587d05b3db9d29afbd5a04b1c5967289dbabebb83940cce71e745&ipo=images"
+                              alt="profilepic"
+                            />
+                            <div>
+                              <p>Rasmika Singhal</p>
+                              <span>May 12 2025, 14:50 pm </span>
+                            </div>
+                          </div>
+                          <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                        </div>
+              
+                        <p class="post-text">
+                          Indian Heroine <span> @rasmika </span> Heroines in cinema have
+                          played a pivotal role in the entertainment industry for decades.
+                          These talented women have not only captivated audiences with their
+                          beauty but have also displayed immense acting prowess, charisma, and
+                          determination.
+                          <a href="#">#heroine</a>
+                          <a href="#">#instagram</a>
+                        </p>
+                        <img
+                          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wXXgnjXI_qm6qkEA6eByjAHaDt%26pid%3DApi&f=1&ipt=59f1c80aa1c4f256350ccc02e6091e2bfa4aa98fcb4adcc0088f5b321b4d0cb5&ipo=images"
+                          alt="feed1"
+                          class="post-img"
+                        />
+                        <div class="post-row">
+                          <div class="activity-icons">
+                            <div>
+                              <img src="images/like-blue.png" alt="like" />
+                              120
+                            </div>
+                            <div>
+                              <img src="images/comments.png" alt="comments" />
+                              33
+                            </div>
+                            <div>
+                              <img src="images/share.png" alt="share" />
+                              50
+                            </div>
+                          </div>
+                          <div class="post-profile-icon">
+                            <img
+                              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.hdQ-3P8FFoH9PVzM0_YQaAHaHD%26pid%3DApi&f=1&ipt=879b356f856587d05b3db9d29afbd5a04b1c5967289dbabebb83940cce71e745&ipo=images"
+                              alt="profile"
+                            />
+                            <i class="fa-solid fa-caret-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="post-container">
+                        <div class="post-row">
+                          <div class="user-profile">
+                            <img
+                              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.gbqQN7E2a8sVBkYu4RR-FgHaHa%26pid%3DApi&f=1&ipt=6cc6bbe1e9d401375df99cf29c9ff6663c45ff27561db71c5a089f92acdb55c8&ipo=images"
+                              alt="profilepic"
+                            />
+                            <div>
+                              <p>Kajal Agarawal</p>
+                              <span>Jan 25 2024, 18:50 pm </span>
+                            </div>
+                          </div>
+                          <a href="#"><i class="fas fa-ellipsis-v"></i> </a>
+                        </div>
+              
+                        <p class="post-text">
+                          Actress Already work in India <span> @kajalagarwal </span> Actres as
+                          Heroine do work hard in india
+                          <a href="#">#kajalagarwal</a>
+                          <a href="#">#tollywood</a>
+                        </p>
+                        <img
+                          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.AdK-_yHpp8Q8L-hHRSaOiwHaEj%26pid%3DApi&f=1&ipt=a59b23134000d6b164cb1df77c9200a65b7f4296229d23cb37db11f02775ce2b&ipo=images"
+                          alt="feed1"
+                          class="post-img"
+                        />
+                        <div class="post-row">
+                          <div class="activity-icons">
+                            <div>
+                              <img src="images/like-blue.png" alt="like" />
+                              120
+                            </div>
+                            <div>
+                              <img src="images/comments.png" alt="comments" />
+                              33
+                            </div>
+                            <div>
+                              <img src="images/share.png" alt="share" />
+                              50
+                            </div>
+                          </div>
+                          <div class="post-profile-icon">
+                            <img
+                              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.gbqQN7E2a8sVBkYu4RR-FgHaHa%26pid%3DApi&f=1&ipt=6cc6bbe1e9d401375df99cf29c9ff6663c45ff27561db71c5a089f92acdb55c8&ipo=images"
+                              alt="profile"
+                            />
+                            <i class="fa-solid fa-caret-down"></i>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+         </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <p>Copyright 2024 - Suber-IQ Github Repo</p>
+    </footer>
+
+<script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BigStore | Ecommerce Website Design</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>Store</span>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" alt="cart" width="30px" height="30px" />
+          <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()"/>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Give Your Workout <br />
+              A New Style
+            </h1>
+            <p>
+              Success isn't alway about greates. Lorem ipsum dolor sit <br />
+              amet consectetur adipisicing elit. Maxime mollitia facilis
+              tenetur, illum nesciunt provident error ipsa illo accusamus minus
+              laboriosam sapient
+            </p>
+            <a href="#" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/image1.png" alt="banner" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ***************** Featured  Categories ************* -->
+
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/category-1.jpg" alt="category" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-2.jpg" alt="category" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-3.jpg" alt="category" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***************** Featured  Products ************* -->
+   <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+            <div class="col-4">
+                  <img src="images/product-1.jpg" alt="product">
+                  <h4>Red Printed T-Shirt</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-2.jpg" alt="product">
+                  <h4>Spark-X Shoe</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-3.jpg" alt="product">
+                  <h4>Formal Jeans</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-4.jpg" alt="product">
+                  <h4>Brand Navy T-Shirt</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$30.00</p>
+            </div>
+      </div>
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+            <div class="col-4">
+                  <img src="images/product-5.jpg" alt="product">
+                  <h4>White Sneakar</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-6.jpg" alt="product">
+                  <h4>Tiger-Y T-Shirt</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$60.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-7.jpg" alt="product">
+                  <h4>Tri-Colour Socks </h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-8.jpg" alt="product">
+                  <h4>Big-B Company Hand Watch</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-9.jpg" alt="product">
+                  <h4>Big-B Company Hand Watch</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-10.jpg" alt="product">
+                  <h4>Big-B Shoes Tiger Design</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-11.jpg" alt="product">
+                  <h4>Big-B Normal Shoes</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                  <img src="images/product-12.jpg" alt="product">
+                  <h4>Big-B New Black Panther Trouser</h4>
+                  <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                  </div>
+                  <p>$300.00</p>
+            </div>
+      </div>
+   </div>
+
+   <!-- ********************* Offer ************************ -->
+   <div class="offer">
+      <div class="small-container">
+            <div class="row">
+                  <div class="col-2"><img src="images/exclusive.png" alt="offer" class="offer-img"></div>
+                  <div class="col-2">
+                        <p>Exclusively Available on Big-B Store</p>
+                        <h1>Smart Band 10</h1>
+                        <small>
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sapiente fugiat, reiciendis numquam sed adipisci voluptatibus voluptatem error doloribus ullam necessitatibus eos unde distinctio consectetur qui nihil at eaque excepturi.
+                        </small>
+                        <a href="#" class="btn">Buy Now &#8594;</a>
+                  </div>
+            </div>
+      </div>
+   </div>
+
+   <!-- ********************Testimonial********************* -->
+   <div class="testimonial">
+      <div class="small-container">
+            <div class="row">
+                  <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sunt necessitatibus doloremque itaque quasi repellendus assumenda quod? Est, dolor assumenda odio excepturi in sint ad natus accusamus, quibusdam perspiciatis numquam.</p>
+                        <div class="rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                        </div>
+                        <img src="images/user-1.png" alt="user">
+                        <h3>Rashmika Parkor</h3>
+                  </div>
+                  <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Dolor, sit amet consectetur adipisicing elit. Veniam sunt necessitatibus doloremque itaque quasi repellendus assumenda quod? Est, dolor assumenda odio excepturi in sint ad natus accusamus, quibusdam perspiciatis numquam.</p>
+                        <div class="rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                        </div>
+                        <img src="images/user-2.png" alt="user">
+                        <h3>Shyam Likhakar</h3>
+                  </div>
+                  <div class="col-3">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p> Ipsum dolor, sit amet consectetur adipisicing elit. Veniam sunt necessitatibus doloremque itaque quasi repellendus assumenda quod? Est, dolor assumenda odio excepturi in sint ad natus accusamus, quibusdam perspiciatis numquam.</p>
+                        <div class="rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <img src="images/user-3.png" alt="user">
+                        <h3>Tinty Goel</h3>
+                  </div>
+            </div>
+      </div>
+   </div>
+
+
+   <!-- ********************* Brands ************************* -->
+   <div class="brands">
+      <div class="small-container">
+            <div class="row">
+                  <div class="col-5">
+                        <img src="images/logo-godrej.png" alt="Brands">
+                  </div>
+                  <div class="col-5">
+                        <img src="images/logo-coca-cola.png" alt="Brands">
+                  </div>
+                  <div class="col-5">
+                        <img src="images/logo-oppo.png" alt="Brands">
+                  </div>
+                  <div class="col-5">
+                        <img src="images/logo-paypal.png" alt="Brands">
+                  </div>
+                  <div class="col-5">
+                        <img src="images/logo-philips.png" alt="Brands">
+                  </div>
+            </div>
+      </div>
+   </div>
+
+   <!-- ************ Footer ***************************** -->
+   
+   <footer class="footer">
+      <div class="container">
+            <div class="row">
+                  <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                              <img src="images/play-store.png" alt="play-store">
+                              <img src="images/app-store.png" alt="app-store">
+                        </div>
+                  </div>
+                  <div class="footer-col-2">
+                        <div class="logo">
+                              <i class="fa-solid fa-store"></i>
+                        </div>
+                        <p>Our Purpose Is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                  </div>
+                  <div class="footer-col-3">
+                        <h3>Usefull Links</h3>
+                        <ul>
+                              <li>Coupons</li>
+                              <li>Blog Post</li>
+                              <li>Return Policy</li>
+                              <li>Join Affiliate</li>
+                        </ul>
+                  </div>
+                  <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                              <li>Facebook</li>
+                              <li>Twitter</li>
+                              <li>Instagram</li>
+                              <li>Youtube</li>
+                        </ul>
+                  </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Suber-IQ</p>
+      </div>
+   </footer>
+
+
+
+   <!-- Js for toggle menu -->
+   <script>
+      let MenuItems = document.getElementById("menuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                  MenuItems.style.maxHeight = "200px";
+            }else{
+                  MenuItems.style.maxHeight = "0px";
+
+            }
+      }
+
+
+
+
+   </script>
+
+
+
+  </body>
+</html>

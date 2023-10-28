@@ -342,6 +342,12 @@ small{
       .col-2, .col-3, .col-4{
             flex-basis: 100%;
       }
+      .logo > i{
+            font-size: 25px;
+      }
+      .logo span{
+            font-size: 15px;
+      }
 }
 
 

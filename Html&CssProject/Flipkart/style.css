@@ -1,0 +1,281 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+:root{
+      --bg-primary: #2874f0;
+      --bg-blue: blue;
+      --bg-white: #fff;
+      --bg-gray: gray;
+      --bg-transparent: whitesmoke;
+      --bg-danger: red;
+      --bg-dark: black;
+}
+a{
+      text-decoration: none;
+}
+header{
+      width: 100%;
+}
+nav{
+      display: flex;
+      flex-direction: column;
+      padding: 12px 6%;
+}
+.header{
+      background: var(--bg-primary);
+}
+nav > .upper_header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.left_nav{
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+}
+.left_nav .logo img{
+      width: 68px;
+}
+.left_nav .toggle_menu{
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      color: var(--bg-white);
+}
+.right_nav{
+      display: flex;
+      column-gap: 22px;
+}
+.right_nav > a{
+      color: var(--bg-white);
+      font-weight: 600;
+}
+.down_header .search_bar{
+      width: 100%;
+      border: 1px solid var(--bg-gray);
+      margin-top: 9px;
+      padding: 10px;
+      background: var(--bg-white);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+}
+.down_header .search_bar input{
+      border: 0;
+      outline: none;
+      width: 100%;
+}
+
+
+/* Categories Section */
+.category_section{
+      padding: 10px;
+}
+.row{
+   display: flex;
+   overflow-x: scroll;
+
+}
+.categories a img{
+      width: 68px;
+}
+
+/*👉 ************** Banner Section ******************** */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--bg-white);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot_icon{
+      width: 50px;
+      background: var(--bg-transparent);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Amazing Card Section */
+
+
+.amazing_section{
+      width: 100%;
+      overflow: hidden;
+}
+.amazing_section > .row{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+.col-3{
+      flex-basis: 33.3%;
+}
+.col-3 > a > img{
+      width: 100%;
+}
+
+/* Gift Section */
+.gift_section{
+      width: 100%;
+      background: rgb(34,193,195);
+      background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(198,40,163,1) 81%);
+}
+.gift_section > .row{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+}
+.gift_section .product_item{
+      flex-basis: 49%;
+     background: var(--bg-white);
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     border-radius: 2px;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.gift_section .product_item > a{
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      padding-left: 2%;
+}
+.gift_section .product_item a > span{
+      color: var(--bg-danger);
+      margin-top: 5px;
+}
+.gift_section .product_item a > h3{
+      color: var(--bg-dark);
+}
+.gift_section .product_item > a > img{
+      width: 180px;
+      margin-bottom: 12px;
+}
+
+.gift_section .collections > .coll_right__arrow{
+     width: 20px;
+     height: 20px;
+      display: inline-block;
+      background-color: var(--bg-blue);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.2;
+      color: var(--bg-white);
+      border: var(--bg-primary);
+      font-weight: bold;
+}
+.gift_section .collections{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 14px 20px;
+      
+}
+.gift_section .collections > .coll_title{
+      color: var(--bg-white);
+      font-size: 18px;
+      font-weight: bold;
+}
+
+
+
+/* Mobile and Accessories */
+
+.bg_mobile{
+      background: rgb(182,241,166);
+background: linear-gradient(0deg, rgba(182,241,166,1) 0%, rgba(156,198,40,1) 81%);
+}
+

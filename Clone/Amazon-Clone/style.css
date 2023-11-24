@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+:root {
+  --primary-color: #00453e;
+  --secondary-color: #ffdfd7;
+  --ternary-color: #195851;
+  --border-color: #fc68aa;
+  --dark-color: #000;
+  --light-color: #fff;
+}
+
+header {
+  width: 100%;
+  color: #fff;
+}
+.nav_header {
+  background-color: var(--primary-color);
+  padding: 2% 2%;
+}
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.top_menu__left___item {
+  width: 30%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.top_menu__left___item .bars span {
+  display: block;
+  background-color: #fff;
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+}
+.top_menu__left___item .logo {
+  font-size: 1.3rem;
+}
+
+.top_menu__right___item {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+.top_menu__right___item .account {
+  display: flex;
+  align-items: center;
+}
+.top_menu__right___item .account > small {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.top_menu__right___item .account > span,
+.top_menu__right___item .cart > span {
+  font-size: 1.2rem;
+}
+
+.search_bar {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+}
+.search_bar > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+.search_bar > input:focus {
+  border: 2px solid var(--border-color);
+}
+
+.search_bar > .search_icon {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 10px;
+}
+
+.bottom_menu {
+  width: 100%; /* Adjust as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  background-color: var(--ternary-color);
+  padding: 0 2%;
+}
+.bottom_menu::-webkit-scrollbar {
+  display: none !important;
+}
+.bottom_menu ul {
+  list-style: none;
+}
+
+.bottom_menu ul li {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 8px 8px;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+}
+.bottom_menu ul li:hover{
+      border: 1px solid var(--light-color);
+}
+
+.bottom_menu ul li a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}

@@ -12,8 +12,10 @@ body {
   --primary-color: #00453e;
   --secondary-color: #ffdfd7;
   --ternary-color: #195851;
+  --navay-blue-color: rgb(13,20,30);
   --lighter-color: #f7f7f7;
   --border-color: #fc68aa;
+  --gray-color: #b1b0b0;
   --dark-color: #000;
   --light-color: #fff;
   --danger-color: red;
@@ -43,6 +45,9 @@ header {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+.top_menu__left___item .bars{
+  cursor: pointer;
 }
 .top_menu__left___item .bars span {
   display: block;
@@ -141,7 +146,28 @@ header {
   font-weight: 600;
 }
 
+.drawer{
+  width: 250px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--light-color);
+  height: 100vh;
+  display: none;
+  left: -250px;
+  transition: left 0.3s ease;
+}
 
+.cross{
+  position: fixed;
+  top: 0.1rem;
+  right: 15%;
+  cursor: pointer;
+}
+.show{
+  display: block;
+  left: 0;
+}
 
 /**************** Banner Section*********** */
 
@@ -303,3 +329,109 @@ header {
 }
 
 
+/* Popular Fashion */
+.popular_fashions{
+  padding: 2%;
+  background-color: var(--lighter-color);
+}
+.popular_fashions > h3{
+ font-size: 1.3rem;
+ font-weight: bold;
+}
+
+.product_item{
+  display: flex;
+  padding: 0 2%;
+  margin-top: 1rem;
+}
+.product_item > img{
+  width: 25%;
+}
+.product_content{
+  margin-left: 1rem;
+  overflow: hidden;
+}
+.product_content > h4{
+  font-weight: 500;
+}
+.product_content > span{
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--primary-color);
+  padding: 6% 0;
+}
+.top > small{
+  color: var(--lighter-color);
+  font-size: 1.2rem;
+}
+.top > a{
+  line-height: 0.5;
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.middle{
+   display: flex;
+   background-color: var(--ternary-color);
+   padding: 8% 4%;
+   gap: 3px;
+}
+.middle a{
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.middle .left, .middle .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bottom{
+  background-color: var(--navay-blue-color);
+  color: white;
+  padding: 10%;
+}
+.bottom .first{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .first > span{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+.bottom .second{
+  text-align: center;
+  line-height: 4;
+}
+.bottom .third{
+  display: flex;
+  justify-content: center;
+}
+.bottom .third > a{
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.bottom .forth{
+  line-height: 4;
+  display: flex;
+  justify-content: center;
+  font-size: 0.69rem;
+  word-spacing: 3px;
+}

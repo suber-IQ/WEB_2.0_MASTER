@@ -16,9 +16,16 @@ body {
   --border-color: #fc68aa;
   --dark-color: #000;
   --light-color: #fff;
+  --danger-color: red;
   --card-shadow:  rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.8rem;
+}
 header {
   width: 100%;
   color: #fff;
@@ -73,7 +80,8 @@ header {
   display: flex;
   margin-top: 8px;
   border: 1px solid var(--border-color);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
+  background-color: var(--light-color);
 }
 .search_bar > input {
   width: 100%;
@@ -82,15 +90,20 @@ header {
   padding: 10px;
   transition: all 0.2s;
   border: 2px solid transparent;
+  border-radius: 0.4rem;
 }
 .search_bar > input:focus {
-  border: 2px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .search_bar > .search_icon {
   background-color: var(--secondary-color);
   color: var(--dark-color);
   padding: 10px;
+  border-radius: 0.4rem;
+  z-index: 99;
 }
 
 .bottom_menu {
@@ -104,6 +117,8 @@ header {
   display: none !important;
 }
 .bottom_menu ul {
+  display: flex;
+  align-items: center;
   list-style: none;
 }
 
@@ -127,140 +142,164 @@ header {
 }
 
 
-/* Banner Section */
 
+/**************** Banner Section*********** */
+
+.banner{
+  position: relative;
+}
 /* Slideshow container */
-.slideshow_container {
-      max-width: 100%;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-   
-    .mySlides > img{
-      max-width: 100%;
-      min-height: 350px;
-      background-size: cover;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 16%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-   
-
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-
-    /* important cards */
-
-    .card{
-      position: absolute;
-      top: 33.2%;
-      width: 100%;
-      display: flex;
-      gap: 5px;
-      padding: 2% 2%;
-      overflow-x: scroll;
-    }
-
-    .imp_card{
-      min-width: 49.5%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 5px;
-      padding: 2%;
-      background-color: var(--light-color);
-      box-shadow: var(--card-shadow);
-    }
-    .imp_card__content, .sell_card__content{
-      width: 48%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      white-space: nowrap;
-    }
-    .imp_card__content > img, .sell_card__content > img{
-      width: 44px;
-    }
-    .imp_card__content > h4, .sell_card__content > h4{
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-
-    .sell_card{
-      min-width: 60%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 2%;
-      background-color: var(--light-color);
-      box-shadow: var(--card-shadow);
-    }
-
-.product_card{
-  min-width: 40%;
-  border-radius: 0.2rem;
-
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-.product_card > img{
-  border-radius: 0.2rem;
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--dark-color);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/********* Important Card Section */
+.imp_card{
+  position: absolute;
+  top: 50%;
+}
+.row{
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  padding: 2%;
+  overflow-x: auto;
+}
+
+.card{
+  min-width: 7rem;
+  background-color: var(--light-color);
+  box-shadow: var(--card-shadow);
+}
+.card_content > img{
   width: 100%;
 }
 
-/* Deals Section */
+.card_content > h3{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ********** Deals Section ***************** */
+
 .deals{
-  width: 96%;
+  width: 100vw;
+  padding: 2%;
+  margin-top: 2%;
+  background-color: var(--lighter-color);
+}
+.deals > h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.deals_card{
+  width: 48%;
+  border-radius: 0.2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 2% auto;
-  gap: 3px;
+  margin-top: 0.8rem;
+  padding: 2%;
+  background-color: var(--light-color);
+}
+.deals_card > img{
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.deals_offer__title{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.deals_offer__title > span{
+  display: inline-block;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--danger-color);
+  font-size: 0.8rem;
+  border-radius: 0.1rem;
+  color: var(--light-color);
+  font-weight: 600;
+}
+.deals_offer__title > h4{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--danger-color);
 }
 
-.deals_img{
-  display: flex;
-  align-items: center;
-  background-color: var(--lighter-color);
-   width: 24%;
-   height: 92px;
-   padding: 2%;
+.deals > a{
+  text-decoration: none;
 }
-.deals_img > img{
+
+/* ******* Women Fashion Sneaker SEctions **** */
+
+.fashion{
+  width: 100vw;
+  padding: 2%;
+}
+.fashion > h2{
+   font-weight: bold;
+}
+.sneakers{
+  width: 48%;
+  padding: 10% 2%;
+  margin-top: 2%;
+  box-shadow: var(--card-shadow);
+}
+.sneakers > img{
   width: 100%;
-  transform: scale(0.6);
 }
+
+

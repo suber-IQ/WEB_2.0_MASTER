@@ -15,7 +15,7 @@ body {
   --navay-blue-color: rgb(13,20,30);
   --lighter-color: #f7f7f7;
   --border-color: #fc68aa;
-  --gray-color: #b1b0b0;
+  --gray-color: #818181;
   --dark-color: #000;
   --light-color: #fff;
   --danger-color: red;
@@ -146,28 +146,47 @@ header {
   font-weight: 600;
 }
 
-.drawer{
-  width: 250px;
+/* ********** Sidebar ******* */
+
+.sidenav {
+  height: 100%;
+  width: 0;
   position: fixed;
+  z-index: 1;
   top: 0;
-  z-index: 100;
-  background-color: var(--light-color);
-  height: 100vh;
-  display: none;
-  left: -250px;
-  transition: left 0.3s ease;
+  left: 0;
+  background-color: var(--dark-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav h3{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--gray-color);
+  display: block;
+  transition: 0.3s;
+  font-size: 0.9rem;
 }
 
-.cross{
-  position: fixed;
-  top: 0.1rem;
-  right: 15%;
-  cursor: pointer;
+.sidenav a:hover {
+  color: var(--lighter-color);
 }
-.show{
-  display: block;
-  left: 0;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
+
+
+
 
 /**************** Banner Section*********** */
 
@@ -435,3 +454,9 @@ header {
   font-size: 0.69rem;
   word-spacing: 3px;
 }
+
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+}
+:root{
+      --dark-color: black;
+      --light-color: white;
+      --lighter-color: rgba(225, 216, 216, 0.781);
+      --danger-color: red;
+      --gray-color: grey;
+}
+
+.container{
+      max-width: 800px;
+}
+body{
+      font-family: 'Raleway', sans-serif;
+}
+a{
+      text-decoration: none;
+      color: var(--light-color);
+}
+
+ul{
+      list-style: none;
+}
+header{
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      width: 100vw;
+      background-color: var(--dark-color);
+}
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 25px;
+
+}
+nav a{
+      text-transform: uppercase;
+      font-size: 0.89rem;
+      font-weight: 500;
+
+}
+.right_nav{
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: var(--dark-color);
+      display: none;
+      padding-bottom: 8px;
+      z-index: 100;
+}
+.right_nav > ul{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+}
+.right_nav > ul > li{
+      margin-left: 25px;
+}
+.menu{
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+}
+.menu > span{
+      width: 22px;
+      height: 3px;
+      background-color: var(--light-color);
+      border-radius: 1px;
+}
+.show{
+      display: block;
+}
+
+
+/* **************** Banner Section ***************** */
+
+/* Slideshow container */
+.slideshow-container {
+      z-index: 0;
+      width: 100vw;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+/* ******************  Main Content ************* */
+
+main{
+      margin: auto;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 0.2rem;
+}
+main > h2{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+main > h6{
+      font-style: italic;
+      font-weight: 400;
+}
+main > p{
+      font-family: 'Raleway', sans-serif;
+      text-align: justify;
+}
+
+/* *********** Galler section ********* */
+
+.gallery{
+      padding: 2%;
+      border-radius: 0.2rem;
+      display: flex;
+      flex-direction: column;
+      margin: 2rem auto;
+}
+.gallery_content{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+}
+
+.gallery_content > h5{
+      font-weight: 500;
+      font-size: 1rem;
+}
+.gallery_content > img{
+      width: 12rem;
+}
+/* *********** Tour Section ********* */
+
+.tour_section{
+      background-color: var(--dark-color);
+}
+
+.tour{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 8% 2%;
+}
+
+.tour_heading{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+}
+.tour_heading > h2{
+      letter-spacing: 8px;
+      text-transform: uppercase;
+}
+.tour_heading > h6{
+      font-style: italic;
+      font-size: 0.7rem;
+      font-weight: 400;
+}
+
+.tour_status{
+      width: 100%;
+      margin-top: 2rem;
+      background-color: var(--light-color);
+      color: black;
+      border-radius: 1px;
+}
+.tour_dates{
+      padding: 8px;
+}
+.tour_dates > .highlight{
+      display: inline-block;
+      color: var(--light-color);
+      background-color: var(--danger-color);
+      padding: 2px 8px;
+      border-radius: 2px;
+}
+
+.tour_card{
+      background-color: var(--light-color);
+      margin-top: 2rem;
+      color: var(--dark-color);
+}
+.tour_card > img{
+ width: 100%;
+}
+.tour_card__content{
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+}
+.tour_card__content > span{
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--gray-color);
+}
+.tour_card__content > p{
+      font-size: 0.9rem;
+      font-weight: 600;
+}
+.tour_card__content > button{
+      display: inline-block;
+      width: 6rem;
+      padding: 8px;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      outline: none;
+      border: none;
+}
+
+
+
+/* ***************** Contact Section ************** */
+
+.contact{
+      margin: 18px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 2%;
+}
+.contact_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+}
+.contact_title > h2{
+      letter-spacing: 5px;
+      font-weight: 500;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      text-align: center;
+}
+.contact_title > span{
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.79rem;
+      text-align: center;
+}
+.contact_infromation{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+}
+.contact_details{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+}
+.contact_details h4{
+  font-weight: 500;
+}
+.contact_input{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+}
+.contact_input input{
+      padding: 10px;
+      border-radius: 3px;
+}
+.first_row{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+}
+.second_row{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+}
+.second_row > button{
+      display: inline;
+      width: fit-content;
+      padding: 10px 22px;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      border: none;
+      border-radius: 3px;
+      align-self: flex-end;
+
+}
+.map_section{
+     width: 100%;
+     max-width: 100%;
+}
+.map_section > img{
+     max-width: 100%;
+      height: max-content;
+      filter: grayscale(50%);
+}
+
+footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6rem 0;
+      gap: 8px;
+}
+
+.footer_top > span > i{
+      font-size: 1.29rem;
+      color: var(--gray-color);
+      /* filter: grayscale(50%); */
+}
+.footer_bottom > span{
+      font-size: 0.83rem;
+      font-weight: 500;
+}
+/* **************** Map Section ************************* */
+
+
+
+/* Styles for tablets */
+@media (min-width: 768px){
+      /* Adjust styles for tablet screens */
+      .menu{
+            display: none;
+      }
+     
+      .right_nav{
+            width: 50%;
+            position: static;
+            padding: 0;
+            display: flex;
+            justify-content: right;
+      }
+      .right_nav > ul{
+            flex-direction: row;
+      }
+      .gallery{
+            flex-direction: row;
+            justify-content: space-between;
+      }
+      .tour_cards{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+      }
+      
+      .contact_infromation{
+            flex-direction: row;
+            justify-content: space-around;
+      }
+      .first_row{
+            flex-direction: row;
+      }
+}
+

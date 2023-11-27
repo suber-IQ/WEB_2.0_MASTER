@@ -77,8 +77,10 @@ nav > .upper_header{
 }
 .row{
    display: flex;
-   overflow-x: scroll;
-
+   overflow-x: auto;
+}
+.row::-webkit-scrollbar{
+      display: none;
 }
 .categories a img{
       width: 68px;

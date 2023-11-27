@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band Template</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left_nav">
+          <a href="#">Home</a>
+        </div>
+        <div class="right_nav" id="dropDown">
+          <ul>
+            <li><a href="#">Band</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Merch</a></li>
+          </ul>
+        </div>
+        <div class="menu" onclick="menuHandler()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ********** Banner Section -->
+
+    <section style="margin-top: 4.33rem;">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
+            src="https://www.w3schools.com/w3images/ny.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://www.w3schools.com/w3images/chicago.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://www.w3schools.com/w3images/la.jpg"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <br />
+    </section>
+
+
+    <!-- ********* Main Section **************** -->
+
+     <main class="container">
+          <h2>The Band</h2>
+          <h6>We Love Music</h6>
+          <p>
+            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+     </main>
+
+
+     <!-- Gallery Section -->
+
+     <section>
+        <div class="gallery container">
+          <div class="gallery_content">
+            <h5>Name</h5>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="gallery-img">
+          </div>
+          <div class="gallery_content">
+            <h5>Name</h5>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="gallery-img">
+          </div>
+          <div class="gallery_content">
+            <h5>Name</h5>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="gallery-img">
+          </div>
+        </div>
+     </section>
+
+
+     <!-- ******************* Tour Dates **************************** -->
+
+     <section class="tour_section">
+            <div class="tour container">
+                 <div class="tour_heading">
+                    <h2>Tour Dates</h2>
+                    <h6>Remember to book your tickets</h6>
+                 </div>
+                 <div class="tour_status">
+                  <div class="tour_dates">
+                      <span>September</span>
+                      <span class="highlight">Sold out</span>
+                  </div>
+                  <hr>
+                  <div class="tour_dates">
+                      <span>October</span>
+                      <span class="highlight">Sold out</span>
+                  </div>
+                  <hr>
+                  <div class="tour_dates">
+                      <span>November</span>
+                  </div>
+                 </div>
+                 <div class="tour_cards">
+                      <div class="tour_card">
+                         <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="city-img">
+                        <div class="tour_card__content">
+                          <h4>Paris</h4>
+                          <span>Fri 27 Nov 2016</span>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button>Buy Tickets</button>
+                        </div>
+                      </div>
+                      <div class="tour_card">
+                         <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="city-img">
+                        <div class="tour_card__content">
+                          <h4>Paris</h4>
+                          <span>Fri 27 Nov 2016</span>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button>Buy Tickets</button>
+                        </div>
+                      </div>
+                      <div class="tour_card">
+                         <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="city-img">
+                        <div class="tour_card__content">
+                          <h4>Paris</h4>
+                          <span>Fri 27 Nov 2016</span>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button>Buy Tickets</button>
+                        </div>
+                      </div>
+                 </div>
+            </div>
+     </section>
+
+
+     <!-- **************** Contact Section ************************ -->
+
+     <section>
+       <div class="contact container">
+            <div class="contact_title">
+              <h2>Contact</h2>
+              <span>Fan? Drop a Note!</span>
+            </div>
+            <div class="contact_infromation">
+                <div class="contact_details">
+                    <h4>Jaipur, India</h4>
+                    <h4>Phone: +00 151515</h4>
+                    <h4>Email: mail@mail.com</h4>
+                </div>
+                <div class="contact_input">
+                   <div class="first_row">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                   </div>
+                  <div class="second_row">
+                    <input type="text" name="message" placeholder="Message">
+                    <button>Send</button>
+                  </div>
+                </div>
+            </div>
+       </div>
+     </section>
+
+     <!-- **************** Map Section ************************ -->
+
+       <div class="map_section">
+         <img src="https://www.w3schools.com/w3images/map.jpg" alt="map-image">
+       </div>
+
+
+  <footer>
+      <div class="footer_top">
+         <span><i class="fa-brands fa-facebook"></i></span>
+         <span><i class="fa-brands fa-instagram"></i></span>
+         <span><i class="fa-brands fa-linkedin"></i></span>
+         <span><i class="fa-brands fa-discord"></i></span>
+         <span><i class="fa-brands fa-twitter"></i></span>
+         <span><i class="fa-brands fa-square-snapchat"></i></span>
+         <span><i class="fa-brands fa-pinterest"></i></span>
+      </div>
+      <div class="footer_bottom">
+           <span>Powered by Suber-IQ</span>
+      </div>
+  </footer>
+
+
+    <script>
+      function menuHandler() {
+        document.getElementById("dropDown").classList.toggle("show");
+      }
+
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

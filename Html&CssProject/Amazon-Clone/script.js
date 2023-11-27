@@ -16,10 +16,10 @@ function showSlides() {
 
 // menu
 
-function openDrawer(){
-  document.getElementById("asideBar").classList.add("show");
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
-function closeDrawer(){
-  document.getElementById("asideBar").classList.remove("show");
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }

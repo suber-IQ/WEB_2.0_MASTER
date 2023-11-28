@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      font-family: 'Raleway', sans-serif;
+}
+:root{
+      --light-color: white;
+      --dark-color: black;
+      --ligth-grey-color: rgba(128, 128, 128, 0.3);
+      --light-dark-color: rgba(15, 15, 15, 0.6);
+      --shadow-card: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.container{
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
+}
+header{
+      width: 100vw;
+      background-color: var(--light-color);
+      box-shadow: var(--shadow-card);
+      padding: 14px 3%;
+      z-index: 100;
+}
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.nav_left{
+      display: flex;
+      gap: 8px;
+}
+
+.nav_left > h3{
+      font-weight: 800;
+      font-size: 1rem;
+}
+.nav_left > span{
+      letter-spacing: 3px;
+      font-size: 1rem;
+      font-weight: 500;
+}
+
+.nav_right{
+      display: none;
+}
+.nav_right > ul {
+      display: flex;
+      list-style: none;
+      gap: 14px;
+}
+.nav_right > ul > li > a{
+      text-decoration: none;
+      color: var(--dark-color);
+      font-weight: 500;
+      font-size: 1.2rem;
+}
+
+
+/* *********** Banner Section ********* */
+
+.banner{
+      width: 100%;
+      z-index: -8;
+}
+.banner_main{
+      position: relative;
+}
+.banner_main > img{
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+}
+
+.banner_title{
+      position: absolute;
+      top: 35%;
+      left: 38%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+}
+.banner_title > h1{
+      background-color: var(--light-dark-color);
+      color: var(--light-color);
+      padding: 1rem 2rem;
+      white-space: nowrap;
+}
+.banner_title > span{
+      color: var(--light-color);
+      font-weight: 600;
+      letter-spacing: 3px;
+      font-size: 2rem;
+      display: none;
+}
+
+/* *********** Projects Section ********* */
+.project_main{
+      display: flex;
+      flex-direction: column;
+      padding: 8px 2rem;
+      margin-top: 3rem;
+}
+.project_heading{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+}
+.project_heading > h2{
+      font-weight: 600;
+}
+.project_heading > span{
+      width: 100%;
+      height: 0.2px;
+      background-color: var(--ligth-grey-color);
+}
+.project_flex{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 3rem;
+}
+.project_card{
+      position: relative;
+}
+.project_card > img{
+      width: 100%;
+}
+.project_title{
+      position: absolute;
+      left: 0;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      padding: 0.7rem 0.8rem;
+      font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* ************ Responsive Design for Screen ***************** */
+
+@media (min-width: 768px){
+      .nav_right{
+            display: block;
+      }
+    .banner_title > span{
+      display: block;
+    }
+    .project_flex{
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .project_card{
+      flex-basis: 49%;
+    }
+    .project_heading > h2{
+      font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+      /* .project_flex{
+            justify-content: flex-start;
+      } */
+  .project_card{
+      flex-basis: 24.3%;
+  }
+}
+

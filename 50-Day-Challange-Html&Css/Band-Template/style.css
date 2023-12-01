@@ -313,15 +313,11 @@ main > p{
 
 }
 .map_section{
-     width: 100%;
-     max-width: 100%;
+      width: 100vw;
 }
 .map_section > img{
-     max-width: 100%;
-      height: max-content;
-      filter: grayscale(50%);
+      width: 100%;
 }
-
 footer{
       display: flex;
       flex-direction: column;
@@ -333,7 +329,6 @@ footer{
 .footer_top > span > i{
       font-size: 1.29rem;
       color: var(--gray-color);
-      /* filter: grayscale(50%); */
 }
 .footer_bottom > span{
       font-size: 0.83rem;
@@ -377,5 +372,6 @@ footer{
       .first_row{
             flex-direction: row;
       }
+      
 }
 

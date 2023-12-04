@@ -1,0 +1,173 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+      /* colors */
+
+  --white: #fff;
+  --primary-color: #E6EFFD;
+  --secondary-color: #1C61E7;
+  --secondary-light-color: #1487D8;
+  --secondary2-color: #6F7AF6;
+  --ternary-color: #438E44;
+  --ternary2-color: #EAC9CF;
+  --ternary3-color: #FA1941;
+  --ternary4-color: #FB5152;
+  --title-color: #333333;
+  --title2-color: #262626;
+  --title3-color: #9A9A9A;
+  --danger-color: #E22D2D;
+  
+  --orange-color: #EDB638;
+  --body-color: #f6f6f6;
+  --dark-light-color: #464644;
+  
+  /* gradient */
+  
+   --gradient: linear-gradient(270deg,#0f4392 0%, #001d3d 100%);
+  
+  
+   /* *********** Typography ************* */
+  
+   /* font family  */
+  
+   --font-primary: 'Montserrat', sans-serif;
+  
+   /* font size */
+  
+   --fs-base: 62.5%;
+  --fs-headline-large: 3.6rem;
+  --fs-headline-medium: 2.8rem;
+  --fs-headline-small: 2.8rem;
+  --fs-title-large: 2.2rem;
+  --fs-title-medium: 2rem;
+  --fs-title-small: 1.8rem;
+  --fs-body-large: 1.6rem;
+  --fs-body-medium: 1.6rem;
+  --fs-label-large: 1.6rem;
+  --fs-label-medium: 1.4rem;
+  
+  /* line height */
+  
+  --lh-headline-large: 44px;
+  --lh-headline-medium: 36px;
+  --lh-headline-small: 36px;
+  --lh-title-large: 28px;
+  --lh-title-medium: 24px;
+  --lh-title-small: 24px;
+  --lh-body-large: 24px;
+  --lh-body-medium: 24px;
+  --lh-label-large: 24px;
+  --lh-label-medium: 20px;
+  
+  /* font weight */
+  
+  --weight-bold: 700;
+  --weight-semiBold: 600;
+  --weight-regular: 400;
+  
+  /* letter spacing  */
+  --traking-n-025: -0.25px;
+  --traking-p-05: 0.5px;
+  
+  /* Border radius */
+  
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 32px;
+  --radius-full: 1000px;
+  --radius-circle: 50%;
+  
+  /* Box shadow */
+  
+  --shadow-1: 0px 2px 4px 0px #00000033;
+  --shadow-2: 0px 5px 10px 0px #0000000D;
+  --shadow-3: 0px 5px 10px 0px #00000033;
+  --shadow-4: 0px 10px 20px 0px #0000001A;
+  
+  
+  
+  }
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  
+  *,
+  *::before,
+  *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li{
+    list-style: none;
+  }
+  a,
+  img,
+  span,
+  input,
+  select,
+  button{ display: block;}
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  img{
+    height: auto;
+  }
+  
+  input,
+  button,
+  select{
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  button { cursor: pointer;}
+  
+  input,
+  select{
+    width: 100%;
+    outline: none;
+  }
+  
+  address { font-style: normal;}
+  
+  select {
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  html{
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    scroll-behavior: smooth;
+  }
+  
+  /* body{
+    background-color: var(--neutral-98);
+    color: var(--neutral-5);
+    font-size: var(--fs-body-medium);
+    line-height: var(--lh-body-medium);
+    /* height: 300vh; */
+  }
+   */

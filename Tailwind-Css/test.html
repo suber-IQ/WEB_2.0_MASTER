@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tailwind css</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
+</head>
+<body>
+      <!-- <h1 class="text-3xl text-red-300 font-bold underline">
+      Hello world!
+      </h1> -->
+
+      <!--********** 👉 Grid Template columns ********* -->
+<!-- 
+      <div class="max-w-[1200px] bg-purple-500 text-white mx-auto grid lg:grid-cols-4  sm:grid-cols-2 p-4 gap-4">
+            <div class="p-4 text-center bg-green-500 sm:col-span-full lg:col-span-1 lg:col-start-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+            <div class="p-4 text-center bg-green-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, a. Dolorum esse animi eligendi! Porro accusamus ut aliquam voluptatibus iusto.</div>
+      </div> -->
+
+      <!--********** 👉 Grid Template rows ********* -->
+
+      <div class="max-w-[1200px] p-4 bg-yellow-500 text-black mx-auto grid grid-rows-4 grid-flow-col gap-4">
+         <div class="bg-clifford text-center p-2 row-span-2">1</div>
+         <div class="bg-clifford text-center p-2">2</div>
+         <div class="bg-clifford text-center p-2">3</div>
+         <div class="bg-clifford text-center p-2 row-start-1 row-end-5">4</div>
+         <div class="bg-clifford text-center p-2">5</div>
+         <div class="bg-clifford text-center p-2">6</div>
+         <div class="bg-clifford text-center p-2">7</div>
+         <div class="bg-clifford text-center p-2">8</div>
+         <div class="bg-clifford text-center p-2">9</div>
+         <div class="bg-clifford text-center p-2">10</div>
+         <div class="bg-clifford text-center p-2">11</div>
+         <div class="bg-clifford text-center p-2">12</div>
+      </div>
+
+  
+
+</body>
+</html>

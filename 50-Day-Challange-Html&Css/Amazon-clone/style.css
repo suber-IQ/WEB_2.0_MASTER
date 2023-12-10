@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+:root{
+      --header-dark-color: #131921;
+      --header-light-color: #232F3E;
+      --footer-down-color: #131A22;
+
+      --light-color: #fff;
+      --light2-color: #e6e6e6;
+      --search-bg-color: #FEBD69;
+      --all-color: #E6E6E6;
+      --white-color: #fff;
+      --text-color: #89909A;
+      --more-color: #007185;
+      --body-color: #E3E6E6;
+
+      --footer-link-color: #999;
+      --footer-heading-color: #ddd;
+
+      --shadow-color: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+      --br0: 2px;
+      --br1: 5px;
+      --br2: 50%;
+
+      --fs0: 0.5rem;
+      --fs1: 0.68rem;
+      --fs2: 0.78rem;
+      --fs3: 0.9rem;
+      --fs4: 1.5rem;
+      --fs5: 1.8rem;
+}
+body{
+      font-family: 'Lato', sans-serif;
+      background-color: var(--body-color);
+}
+
+
+/* *********** utiliy class *********  */
+.container{
+      max-width: 1500px;
+      margin: auto;
+}
+.flex{
+      display: flex;
+}
+.items-center{
+      align-items: center;
+}
+.items-bottom{
+      align-items: flex-end;
+}
+.justify-center{
+      justify-content: center;
+}
+.justify-between{
+      justify-content: space-between;
+}
+.gap-mini{
+      gap: 0.2rem;
+}
+.gap-small{
+      gap: 0.5rem;
+}
+.gap-medium{
+      gap: 1rem;
+}
+.gap-large{
+      gap: 1.5rem;
+}
+.direction-column{
+      flex-direction: column;
+}
+
+header.header .top-nav{
+      background-color: var(--header-dark-color);
+      padding: 0.5rem 1%;
+}
+header.header .top-nav .logo img{
+      width: 105px;
+}
+header.header .top-nav .location span:first-child{
+      color: var(--white-color);
+}
+header.header .top-nav .location div small{
+      color: var(--text-color);
+}
+header.header .top-nav .location div span{
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: var(--fs3);
+
+}
+header.header .top-nav .search-bar{
+      flex: 1;
+      background-color: var(--white-color);
+      border: 1px solid transparent;
+      border-radius: var(--br0);
+}
+header.header .top-nav .search-bar .category{
+      display: inline-block;
+      background-color: var(--all-color);
+      padding: 0.6rem 1rem;
+}
+header.header .top-nav .search-bar .category span:first-child{
+      font-size: var(--fs2);
+      letter-spacing: 1px;
+}
+header.header .top-nav .search-bar .category span:last-child{
+      font-size: var(--fs1);
+}
+header.header .top-nav .search-bar .search{
+      flex: 1;
+}
+header.header .top-nav .search-bar input{
+      background-color: transparent;
+      border: none;
+      outline: 0;
+      padding: 0.6rem 1rem;
+}
+header.header .top-nav .search-bar .search-icon{
+      background-color: var(--search-bg-color);
+      padding: 0.6rem 1rem;
+      display: inline-block;
+}       
+
+header.header .top-nav .language span:nth-child(2){
+      color: var(--white-color);
+      font-size: var(--fs2);
+      font-weight: 600;
+}
+ 
+header.header .top-nav .language span:last-child{
+      color: var(--text-color);
+      font-size: var(--fs1);
+}
+ 
+header.header .top-nav .account small {
+      color: var(--text-color);
+}
+  
+header.header .top-nav .account div span:first-child {
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: var(--fs3);
+}
+ 
+header.header .top-nav .account div span:last-child {
+      color: var(--text-color);
+      font-size: var(--fs1);
+}
+header.header .top-nav .order small {
+      color: var(--text-color);
+}
+ 
+header.header .top-nav .order span {
+      color: var(--white-color);
+}
+header.header .top-nav .cart span{
+      color: var(--white-color);
+      font-size: var(--fs4);
+}
+header.header .bottom-nav{
+      background-color: var(--header-light-color);
+      padding: 0 1%;
+}
+
+header.header .bottom-nav .left .menu span{
+  background-color: var(--white-color);
+  width: 17px;
+  height: 2px;
+}
+header.header .bottom-nav .left .menu-category span:last-child{
+      font-weight: 600;
+}
+header.header .bottom-nav .left{
+      color: var(--white-color);
+}
+header.header .bottom-nav .left .categories h5{
+      font-weight: 500;
+      white-space: nowrap;
+}
+section.banner{
+      width: 100%;
+}
+section.banner img{
+     width: 100%;
+}

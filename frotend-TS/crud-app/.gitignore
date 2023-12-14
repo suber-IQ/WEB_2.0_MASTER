@@ -1,0 +1,13 @@
+# Ignore Node.js modules (installed packages)
+node_modules/
+
+# Ignore TypeScript build output
+/public/*.js
+/public/*.js.map
+public/src
+# Ignore any compiled TypeScript files
+*.js
+*.js.map
+
+# Ignore any temporary files
+.DS_Store

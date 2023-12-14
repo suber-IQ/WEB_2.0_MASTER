@@ -1,0 +1,21 @@
+{
+      "compilerOptions": {
+        "target": "ES5",
+        "module": "ESNext",
+        "strict": true,
+        "esModuleInterop": true,
+        "outDir": "./public/src",
+        "allowJs": true,
+        "checkJs": false,
+        "sourceMap": true
+      },
+      "include": [
+        "src/**/*.ts",
+        "public/**/*.html",
+        "public/**/*.css"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
+    }
+    

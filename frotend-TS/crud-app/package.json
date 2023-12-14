@@ -1,0 +1,18 @@
+{
+  "name": "my-ts-project",
+  "version": "1.0.0",
+  "description": "TypeScript Web App",
+  "scripts": {
+    "start": "npm run build:ts & npm run serve & npm run watch:html-css",
+    "build:ts": "tsc -p . --watch",
+    "serve": "live-server public",
+    "watch:html-css": "onchange 'public/**/*.html' 'public/**/*.css' -- npm run reload:browser",
+    "reload:browser": "echo 'Reloading Browser' && npm run serve"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "onchange": "^7.1.0",
+    "typescript": "^4.5.4"
+  }
+}

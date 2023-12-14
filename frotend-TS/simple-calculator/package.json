@@ -1,0 +1,21 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:ts & npm run serve & npm run watch:html-css",
+    "build:ts": "tsc -p . --watch",
+    "serve": "live-server public",
+    "watch:html-css": "onchange 'public/**/*.html' 'public/**/*.css' -- npm run reload:browser",
+    "reload:browser": "echo 'Reloading Browser' && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "onchange": "^7.1.0",
+    "typescript": "^5.3.3"
+  }
+}

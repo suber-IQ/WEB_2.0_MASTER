@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Udemy Clone</title>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- link icon -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+</head>
+<body>
+
+  <header class="header">
+    <nav class="mobile-menu-items" id="sideMenu">
+      <div class="account flex items-center justify-evenly light-bg-color gap-mini">
+         <div class="account-img">SK</div>
+         <div class="account-title flex direction-column">
+             <span>Hi, Sumit kumar</span>
+             <small>Welcome back</small>
+         </div>
+         <span class="angle-right">
+          <i class="fa-solid fa-angle-right"></i>
+         </span>
+      </div>
+      <div class="nav-links">
+         <div class="instructor flex justify-center">
+           <a href="#">Switch to instructor view</a>
+         </div>
+         <div class="learn flex direction-column gap-small">
+            <h4>Learn</h4>
+            <a href="#">My learning</a>
+         </div>
+         <div class="popular flex direction-column gap-large">
+             <h4>Most popular</h4>
+            <span class="flex justify-between items-center">
+               <a href="#">Web Development</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Mobile Development</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Game Development</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Enterpreneurship</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Businnes Analytics & Intelligence</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Finance</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">IT Certifications</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Personal Transformation</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Graphic Design & Illustration</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">Digital Marketing</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+            <span class="flex justify-between items-center">
+               <a href="#">All Categories</a>
+               <span class="angle-right">
+                  <i class="fa-solid fa-angle-right"></i>
+               </span>
+            </span>
+              <h4>More from Udemy</h4>
+              <span>
+                <a href="#">Udemy Business</a>
+              </span>
+              <span>
+                <a href="#">Get the app</a>
+              </span>
+              <span>
+                <a href="#">Invite Frinds</a>
+              </span>
+              <span>
+                <a href="#">Help</a>
+              </span>
+              <button class="flex items-center">
+                 <span><i class="fa-solid fa-globe"></i></span>
+                 <span>English</span>
+              </button>
+         </div>
+      </div>
+    </nav>
+     <div class="cross-menu closebtn" onclick="closeNav()">
+        X
+     </div>
+    <nav class="nav-top flex items-center justify-between">
+        <div class="menu pointer opacity" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="middle-items flex items-center gap-large">
+          <span class="categories">
+            <a href="#">Categories</a>
+         </span>
+         <div class="search-bar">
+            <div class="search flex items-center">
+               <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+               </span>
+               <div class="search-input">
+                  <input type="text" placeholder="Search for anything">
+               </div>
+            </div>
+         </div>
+         <span class="instructor">
+           <a href="#">Instructor</a>
+         </span>
+         <span class="learning">
+           <a href="#">My learning</a>
+         </span>
+        
+        </div>
+        <div class="right-items flex items-center gap-large">
+           <span class="opacity search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           </span>
+           <span class="heart">
+            <i class="fa-regular fa-heart"></i>
+           </span>
+           <span class="opacity cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+           </span>
+           <span class="bell-icon">
+            <i class="fa-regular fa-bell"></i>
+           </span>
+           <div class="account">
+              <div class="account-title">
+                Sk
+              </div>
+           </div>
+        </div>
+    </nav>
+    <nav class="nav-bottom">
+      <div class="nav-bottom-content flex justify-between gap-medium">
+        <span class="category">
+          <a href="#">Development</a>
+        </span>
+        <span class="category">
+          <a href="#">Business</a>
+        </span>
+        <span class="category">
+          <a href="#">Finance & Accounting</a>
+        </span>
+        <span class="category">
+          <a href="#">IT & Software</a>
+        </span>
+        <span class="category">
+          <a href="#">Office Productivity</a>
+        </span>
+        <span class="category">
+          <a href="#">Personal Development</a>
+        </span>
+        <span class="category">
+          <a href="#">Design</a>
+        </span>
+        <span class="category">
+          <a href="#">Marketing</a>
+        </span>
+        <span class="category">
+          <a href="#">Health & Fitness</a>
+        </span>
+        <span class="category">
+          <a href="#">Music</a>
+        </span>
+
+      </div>
+    </nav>
+  </header>
+  <!-- banner section -->
+  <seaction class="banner">
+    
+  </seaction>
+
+
+      <script src="./app.js"></script>
+</body>
+</html>

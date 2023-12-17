@@ -14,13 +14,13 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <!-- Slick slider  -->
-  <link
-  rel="stylesheet"
-  type="text/css"
-  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-/>
-  
+
+   <!-- Slick Slider -->
+   <link
+   rel="stylesheet"
+   type="text/css"
+   href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+ />
 </head>
 <body>
 
@@ -236,99 +236,94 @@
   </section>
   <!-- ******************* Learning Section ************* -->
    <section class="learning">
-         <div class="learning-wrap container flex gap-large direction-column">
-            <div class="learning-heading">
-               <h1>Let's start learning, Sumit</h1>
-             </div>
-            <div class="slider-wrap">
-               <div class="slide-icon">
-                  <span class="prev-btn">
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </span>
-                  <span class="next-btn">
-                    <i class="fa-solid fa-chevron-right"></i>
+      <div class="learning-wrap small-container flex gap-large direction-column">
+         <div class="learning-heading">
+            <h1>Let's start learning, Sumit</h1>
+          </div>
+         <div class="slider-container">
+             <div class="learning-row flex">
+               <div class="learning-card">
+                  <div class="alarm-icon">
+                     <img src="images/clock.png" alt="" />
+                  </div>
+                  <div class="learning-content flex direction-column gap-mini">
+                      <h4>Schedule time to learn</h4>
+                      <p>A little each days up adds up. Get reminders from your...</p>
+                      <a href="#">Get started</a>
+                  </div>
+                  <span class="learning-close-icon">
+                     <i class="fa-solid fa-xmark"></i>
                   </span>
               </div>
-                <div class="learning-row learningSlider">
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                     <span class="learning-close-icon">
-                        <i class="fa-solid fa-xmark"></i>
-                     </span>
-                 </div>
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                 </div>
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                 </div>
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                 </div>
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                 </div>
-                  <div class="learning-card">
-                     <div class="alarm-icon">
-                        <img src="images/clock.png" alt="" />
-                     </div>
-                     <div class="learning-content flex direction-column gap-mini">
-                         <h4>Schedule time to learn</h4>
-                         <p>A little each days up adds up. Get reminders from your...</p>
-                         <a href="#">Get started</a>
-                     </div>
-                 </div>
-                </div>
-            </div>
+               <div class="learning-card">
+                  <div class="alarm-icon">
+                     <img src="images/clock.png" alt="" />
+                  </div>
+                  <div class="learning-content flex direction-column gap-mini">
+                      <h4>Schedule time to learn</h4>
+                      <p>A little each days up adds up. Get reminders from your...</p>
+                      <a href="#">Get started</a>
+                  </div>
+              </div>
+               <div class="learning-card">
+                  <div class="alarm-icon">
+                     <img src="images/clock.png" alt="" />
+                  </div>
+                  <div class="learning-content flex direction-column gap-mini">
+                      <h4>Schedule time to learn</h4>
+                      <p>A little each days up adds up. Get reminders from your...</p>
+                      <a href="#">Get started</a>
+                  </div>
+              </div>
+             </div>
+             <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+             <button class="next" onclick="changeSlide(1)">&#10095;</button>
+         </div>
+      </div>
+   
+   </section>
+<!-- ***********   Udemy Business Section************** -->
+
+   <section class="business">
+         <div class="small-container">
+             <div class="business-card items-center">
+                  <div class="business-title">
+                     <h4> <span>Training 2 or more people?</span> Get your team access to Udemy's top 25,000+ courses</h4>
+                  </div>
+                  <div class="business-button">
+                     <button class="first-btn">Get Udemy Business</button>
+                     <button class="second-btn">Dismiss</button>
+                  </div>
+             </div>
          </div>
    </section>
 
 
 
-    <!-- jQuery (necessary for Slick) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Slick JS -->
+
+
+
+
+
+
+
+
+
+    <!-- Slick Slider -->
     <script
       type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
- 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
       <script src="./app.js"></script>
 </body>
 </html>

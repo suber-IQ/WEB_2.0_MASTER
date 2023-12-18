@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Flipkart Clone</title>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Bootstrap Icons Library -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Slick Slider -->
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+</head>
+<body>
+     <header>
+        <!-- ************* 🎉 Mobile Nav -->
+            <nav class="mobile_screen p-percent">
+                  <div class="container">
+                      <div class="top flex items-center justify-between">
+                           <div class="top_left flex items-center gap-large">
+                              <span class="menu"><i class="bi bi-list"></i></span>
+                               <span class="logo">
+                                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus_mobile-39120d.svg" alt="logo">
+                               </span>
+                           </div>
+                           <div class="top_right flex items-center gap-medium">
+                              <div class="account flex items-center gap-small">
+                                    <span class="account_icon">
+                                          <i class="bi bi-person-circle"></i>
+                                    </span>
+                                    <span>Login</span>
+                              </div>
+                              <div class="cart">
+                                    <span><i class="bi bi-cart"></i></span>
+                              </div>
+                           </div>
+                      </div>
+                      <div class="middle">
+                         <div class="search flex items-center">
+                               <span><i class="bi bi-search"></i></span>
+                               <input type="text" placeholder="Search for Products, Brands and More">
+                         </div>
+                      </div>
+                      <div class="bottom">
+                         <div class="categories flex items-center">
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/033f3268031fa0ba.jpg?q=20" alt="categories button">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/0f3d008be60995d4.jpg?q=20" alt="categories button">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/42f9a853f9181279.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/cbcb478744635781.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/913e96c334d04395.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/fk-p-flap/490/460/image/07d71cbddb6083ad.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/4be8a679014497f0.png?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/6ecb75e51b607880.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/6ecb75e51b607880.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/89d809684711712a.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/fk-p-flap/490/460/image/4b0a064d53b4ff28.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/fk-p-flap/490/460/image/418dfd603e730185.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/356d37e9512c7fcb.jpg?q=20">
+                                    </div>
+                              </div>
+                              <div class="category">
+                                    <div class="category_img">
+                                          <img src="https://rukminim2.flixcart.com/flap/490/460/image/aeb7da37a9e85209.jpg?q=20">
+                                    </div>
+                              </div>
+                         </div>
+                      </div>
+                  </div>
+            </nav>
+
+        <!-- ************* 🎉 Big Screen Nav -->
+     </header>
+
+     <section class="banner">
+           <div class="container">
+                  <button class="prev">&lt;</button>
+                  <button class="next">&gt;</button>
+                  <div class="small_screen banner-slider">
+                      
+                        <div class="slide_img">
+                         <img src="https://rukminim2.flixcart.com/fk-p-flap/480/210/image/0d1e1ca1e075fa6e.jpeg?q=20" alt="banner">
+                        </div>
+                        <div class="slide_img">
+                         <img src="https://rukminim2.flixcart.com/fk-p-flap/480/210/image/27f86f70cf8ff972.jpg?q=20" alt="banner">
+                        </div>
+                        <div class="slide_img">
+                         <img src="https://rukminim2.flixcart.com/fk-p-flap/480/210/image/3fe008be8314d7bd.jpeg?q=20" alt="banner">
+                        </div>
+                        <div class="slide_img">
+                         <img src="https://rukminim2.flixcart.com/fk-p-flap/480/210/image/8644500b31065afb.png?q=20" alt="banner">
+                        </div>
+                        <div class="slide_img">
+                         <img src="https://rukminim2.flixcart.com/fk-p-flap/480/210/image/c5a7938d343e643f.jpg?q=20" alt="banner">
+                        </div>
+                     </div>
+                     <div class="big_screen"></div>                     
+           </div>
+     </section>
+
+
+     <!-- ************ highlight card image ************** -->
+
+     <section class="highlight">
+        <div class="highlight_wrap flex">
+            <div class="highlight_card__img">
+                  <img src="https://rukminim2.flixcart.com/fk-p-flap/220/230/image/364ebb91a1c3f207.jpg?q=80" alt="card images">
+            </div>
+            <div class="highlight_card__img">
+                  <img src="https://rukminim2.flixcart.com/fk-p-flap/220/230/image/a10f8ca85721ba5f.jpeg?q=80" alt="card images">
+            </div>
+            <div class="highlight_card__img">
+                  <img src="https://rukminim2.flixcart.com/fk-p-flap/220/230/image/f6f12801aa49f8f1.jpg?q=80" alt="card images">
+            </div>
+        </div>
+     </section>
+
+
+
+     <!-- ************** New Year Specials ***************** -->
+
+     <section class="specials">
+        <div class="container p-percent">
+             <div class="special_wrap">
+                   <div class="heading_wrap flex items-center justify-between">
+                        <h2 class="heading">New Year Specials</h2>
+                        <span class="more">&gt;</span>
+                   </div>
+                   <div class="product_wrap">
+                        <div class="product_card">
+                              <div class="card_img">
+                                    <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/t-shirt/3/d/i/l-jc22-hd-fs-black-jmc-pckt-jump-cuts-original-imagg3yxfk48y7nt.jpeg?q=80" alt="product_card image">
+                              </div>
+                              <div class="card_title">
+                                    <h4>Wrist Watches</h4>
+                              </div>
+                              <div class="card_discount">
+                                    <span>Min. 90% off</span>
+                              </div>
+                        </div>
+                        <div class="product_card">
+                              <div class="card_img">
+                                    <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/sweatshirt/w/d/j/s-hood1-do-four-lines-n-fashion-and-youth-original-imaghk5gxfcjfzyp.jpeg?q=80" alt="product_card image">
+                              </div>
+                              <div class="card_title">
+                                    <h4>Men's Sports Shoes</h4>
+                              </div>
+                              <div class="card_discount">
+                                    <span>Min. 70% Off</span>
+                              </div>
+                        </div>
+                        <div class="product_card">
+                              <div class="card_img">
+                                    <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/shoe/r/e/m/-original-imagsfdvuffvqx4x.jpeg?q=80" alt="product_card image">
+                              </div>
+                              <div class="card_title">
+                                    <h4>Men's T-shirts</h4>
+                              </div>
+                              <div class="card_discount">
+                                    <span>Min. 50% Off</span>
+                              </div>
+                        </div>
+                        <div class="product_card">
+                              <div class="card_img">
+                                    <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/watch/k/v/i/1-7k2s7-globe-led-green-flozio-boys-girls-original-imaguz8z2pnyyky3.jpeg?q=80" alt="product_card image">
+                              </div>
+                              <div class="card_title">
+                                    <h4>Men's Sweatshirts</h4>
+                              </div>
+                              <div class="card_discount">
+                                    <span>Min. 50% Off</span>
+                              </div>
+                        </div>
+                   </div>
+
+             </div>
+        </div>
+     </section>
+
+<!-- ************ highlight card image ************** -->
+
+<section class="highlight">
+      <div class="highlight_wrap flex">
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/feee34d37d45a27a.jpeg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/e7775c7518f2889b.jpeg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/93c6bb421ddcaecc.jpeg?q=80" alt="card images">
+          </div>
+      </div>
+   </section>
+
+     <!-- ************** Home Decor & Funrnishings ***************** -->
+
+     <section class="home_decor specials">
+      <div class="container p-percent">
+           <div class="home_decor__wrap special_wrap">
+                 <div class="heading_wrap flex items-center justify-between">
+                      <h2 class="heading">New Year Specials</h2>
+                      <span class="more">&gt;</span>
+                 </div>
+                 <div class="product_wrap">
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/emergency-light/x/4/n/metal-body-multi-functional-keychain-bottle-opener-magnetic-original-imaghxf3zjztuedj.jpeg?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Emergency Lights</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 50% off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/l2w7b0w0/pet-bed/3/n/i/4xl-feeding-mat-bpa-free-easy-clean-dishwasher-safe-waterproof-original-image5fcq7ytu5yd.jpeg?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Pet Beds</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 70% Off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/kqv8vww0/blanket/h/5/d/premium-ply-self-design-mink-blanket-wool-double-bed-blanket-original-imag4s78vrz7btdc.jpeg?q=80">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Blankets</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Don't Miss</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/kmf7ki80/plant-sapling/5/z/b/tf0410-1-v-a-enterprises-original-imagfbyrbgycgmz6.jpeg?q=80">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Plants Saplings</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 50% Off</span>
+                            </div>
+                      </div>
+                 </div>
+
+           </div>
+      </div>
+   </section>
+
+     <!-- ************** End of Season Bestsellers ***************** -->
+
+     <section class="season specials">
+      <div class="container p-percent">
+           <div class="season__wrap special_wrap">
+                 <div class="heading_wrap flex items-center justify-between">
+                      <h2 class="heading">New Year Specials</h2>
+                      <span class="more">&gt;</span>
+                 </div>
+                 <div class="product_wrap">
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/kj36ky80-0/watch/b/w/9/new-generation-digital-new-digital-led-sports-watch-for-boys-and-original-imafyqjga9tzhgqx.jpeg?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Wrist Watches</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 90% off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/l4x2rgw0/shoe/y/l/s/6-new-running-shoes-for-men-6-kreverse-black-original-imagfptgagjrapjr.jpeg?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Men's Sports Shoes</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 70% Off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/t-shirt/z/0/k/l-all-rbcpon-sky-one-nb-nicky-boy-original-imagrdhcgyk7papf.jpeg?q=80">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Men's T-shirts</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 50% off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/shopsy-wallet-card-wallet/q/f/s/mdl-brown-bmw-sty-brown-bmw-sunshopping-men-original-imags9puxekht6jr.jpeg?q=80">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Wallets</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 70% Off</span>
+                            </div>
+                      </div>
+                 </div>
+
+           </div>
+      </div>
+   </section>
+
+
+
+     <!-- ************** Today's Highlights ***************** -->
+     <section class="highlight">
+       <div class="highlight_heading">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/480/70/image/bb3c6e84aa987dce.jpg?q=20" alt="">
+       </div>
+      <div class="highlight_wrap">
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/9ffa40caeb3fa52c.jpg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/67b92933067ebfc1.jpg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/62284164a7673cd2.jpg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/6878130f50700041.jpg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/d6f53f64be552167.jpg?q=80" alt="card images">
+          </div>
+          <div class="highlight_card__img">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/220/290/image/4935bc0bfb1488e5.jpg?q=80" alt="card images">
+          </div>
+      </div>
+   </section>
+
+
+     <!-- ************** In Demand ***************** -->
+
+     <section class="home_decor specials">
+      <div class="container p-percent">
+           <div class="home_decor__wrap special_wrap">
+                 <div class="heading_wrap flex items-center justify-between">
+                      <h2 class="heading">In Demand</h2>
+                      <span class="view_all">View all</span>
+                 </div>
+                 <div class="product_wrap">
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim1.flixcart.com/fk-p-image/120/120/cf-ce-calvin-prod10/4a5ce8f72f5a138219ed33c7fc5c28e5.JPEG?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Public Address Systems</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 50% off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim1.flixcart.com/fk-p-image/120/120/cf-ce-calvin-prod1/5e71df678fd8cab5f8d7925d7b385835.JPEG?q=80" alt="product_card image">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Sarees</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 70% Off</span>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim1.flixcart.com/image/120/120/xif0q/shoe/m/v/2/-original-imaggckgs6gzuhnz.jpeg?q=80">
+                            </div>
+                            <div class="card_discount">
+                                  <span>Min. 20% off</span>
+                            </div>
+                            <div class="card_title">
+                                  <h4>Woodland</h4>
+                            </div>
+                      </div>
+                      <div class="product_card">
+                            <div class="card_img">
+                                  <img src="https://rukminim1.flixcart.com/fk-p-flap/120/120/image/a76f98b64fd981cd.jpg?q=80">
+                            </div>
+                            <div class="card_title">
+                                  <h4>Year's Lowest Prices</h4>
+                            </div>
+                            <div class="card_discount">
+                                  <span>From &#x20b9; 149 </span>
+                            </div>
+                      </div>
+                 </div>
+
+           </div>
+      </div>
+   </section>
+
+
+
+
+    <!-- Slick Slider -->
+    <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+      <script src="app.js"></script>
+</body>
+</html>

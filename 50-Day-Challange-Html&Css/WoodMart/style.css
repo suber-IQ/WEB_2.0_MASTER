@@ -163,11 +163,11 @@
     scroll-behavior: smooth;
   }
   
-  /* body{
+  body{
     background-color: var(--neutral-98);
     color: var(--neutral-5);
     font-size: var(--fs-body-medium);
     line-height: var(--lh-body-medium);
     /* height: 300vh; */
   }
-   */
+  

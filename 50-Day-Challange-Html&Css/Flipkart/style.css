@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root{
+      --white-color: #fff;
+      --black-color: #000;
+      --yellow-color: yellow;
+      --primary-color: rgba(64, 64, 234, 0.869);
+      --grey-color: #333;
+      --light-color: #F1F2F4;
+      --text-color: #7B5F4A;
+      --text2-color: #21213C;
+      --heading-color: #212121;
+      --search-bg-color: #F0F5FF;
+      --danger-color: red;
+      --lighter-color: rgba(128, 128, 128, 0.2);
+}
+
+body{
+      font-family: 'Lato', sans-serif;
+      background-color: var(--light-color);
+      color: var(--black-color);
+}
+
+
+/* ************** Utils class ********************** */
+
+.container{
+      max-width: 1600px !important;
+      margin: 0 auto;
+}
+
+.flex{
+      display: flex;
+}
+.items-center{
+      align-items: center;
+}
+.justify-center{
+      justify-content: center;
+}
+.justify-between{
+      justify-content: space-between;
+}
+.gap-mini{
+      gap: 0.3rem;
+}
+.gap-small{
+      gap: 0.5rem;
+}
+.gap-medium{
+      gap: 1rem;
+}
+.gap-large{
+      gap: 1.5rem;
+}
+.gap-extra-large{
+      gap: 2rem;
+}
+.p-percent{
+      padding: 0 3%;
+}
+
+
+
+/* ********** header for mobile screen **************** */
+
+header nav.mobile_screen{
+      background-color: var(--white-color);
+}
+header .mobile_screen .top{
+      padding: 0.5rem 0;
+}
+header .mobile_screen .top .top_left .menu{
+      font-size: 1.55rem;
+}
+header .mobile_screen .top .top_left .logo img{
+      width: 7.5rem;
+}
+header .mobile_screen .top .top_right .account .account_icon{
+      font-size: 1.3rem;
+}
+header .mobile_screen .top .top_right .account span:last-child{
+      font-size: 1.1rem;
+}
+header .mobile_screen .top .top_right .cart span{
+      font-size: 1.4rem;
+}
+header .mobile_screen .middle{
+      padding: 0 0 0.6rem 0;
+}
+header .mobile_screen .middle .search{
+      background-color: var(--search-bg-color);
+      border: 1px solid var(--search-bg-color);
+      border-radius: 5px;
+}
+header .mobile_screen .middle .search span{
+      padding: 0.6rem 0 0.6rem 0.6rem;
+      font-weight: bold;
+}
+header .mobile_screen .middle .search input{
+      flex: 1;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0.6rem 1rem;
+}
+header .mobile_screen .bottom .categories{
+      overflow-x: auto;
+}
+header .mobile_screen .bottom .categories::-webkit-scrollbar{
+      display: none;
+}
+header .mobile_screen .bottom .categories .category .category_img img{
+      width: 68px;
+}
+
+
+/* ******************** Banner Section ********************** */
+
+section.banner .small_screen .slide_img img{
+      width: 100%;
+      object-fit: cover;
+      background-position: center;
+}
+
+ /* Custom CSS for the slider */
+
+section.banner .container{
+      position: relative;
+}
+section.banner .container .next,section.banner .container .prev{
+ display: none !important;
+ position: absolute;
+ top: 10%;
+ transform: translateX(-50%);
+ z-index: 4;
+ text-align: center;
+ padding: 2rem 0.1rem;
+}
+section.banner .container .next{
+      right: -8px;
+}
+section.banner .container .prev{
+  left: 10px;
+}
+
+/* Custom CSS for the slider dots */
+
+.slick-dots {
+      display: block;
+      text-align: center;
+    }
+
+    
+    .slick-dots li {
+          display: inline-block;
+          margin: 0 5px;
+      }
+      /* Hide the dot numbers */
+    
+    .slick-dots button {
+      font-size: 10px;
+      line-height: 1;
+      border: none;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: #ccc;
+      color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .slick-dots button:hover {
+      background-color: #555;
+    }
+    
+ /*************** Highlight Section ***********************************  */
+ 
+ section.highlight .highlight_wrap .highlight_card__img img{
+       width: 100%;
+}
+ section.highlight .highlight_wrap{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+}
+      
+/*************** New Year Specials Section *********************** */
+section.specials .container{
+  background-color: var(--white-color);
+}
+section.specials .special_wrap{
+      padding: 1rem 0;
+}
+.heading_wrap{
+      padding: 0 0 1rem 0;
+}
+.heading_wrap .heading{
+      font-weight: bold;
+      font-size: 1.3rem;
+}
+.heading_wrap .more{
+  background-color: var(--primary-color);
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: var(--white-color);
+  border-radius: 50%;
+  line-height: 1.2;  
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.view_all{
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      font-size: 0.85rem;
+      padding: 0.5rem 0.65rem;
+      border-radius: 4px;
+}
+.product_wrap{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 8px;
+}
+.product_card{
+      border: 1px solid var(--lighter-color);
+      padding: 0.5rem;
+      transition: all 0.3s ease-in-out;
+}
+.product_card:hover .card_img img{
+      transform: scale(1.1);
+}
+.product_card .card_img{
+      overflow: hidden;
+      height: 80%;
+}
+.product_card .card_img img{
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+
+}
+.product_card .card_title h4{
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 0.2rem 0;
+}
+.product_card .card_discount span{
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--danger-color);
+}
+
+.highlight_heading img{
+      width: 100%;
+}

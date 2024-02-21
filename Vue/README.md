@@ -1,4 +1,4 @@
-![WEB_2.0](https://res.cloudinary.com/suberiq/image/upload/v1708524202/bjyceqyzlhozh50zanif.jpg)
+![WEB_2.0](https://res.cloudinary.com/suberiq/image/upload/v1708524422/Copy_of_WEb_Development_fqdy4y.jpg)
 
 # VueJs (Javascript framework)
 

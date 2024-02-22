@@ -167,3 +167,157 @@
   - Go with Composition API + Single-File Components if you plan to build full applications with vue.
 
 ## ⭐What is Component
+- Component allow us tyo split the UI into independent and reusable pieces, and think about each piece in isolation. It's common for an app to be organized into a tree of nested components.
+ ### ✴️What is Vue Component
+ - Vue components are written as a combination of Javascript objects that manage the app's data and an HTML-based template syntax that maps to the underlying DOM structure.
+
+ ### ✴️What is Vue Component
+  - Vue Single-File Components (SFC) a.k.a. ***.vue** files is a special file format that allows us to encapsulate the template(HTML),logic (JavaScript), and styling (CSS) of a Vue component in a single file.
+
+  `Syntax :-`  
+
+```javascript
+         FileName.vue
+        <script>JavaScript </script>
+        <template>HTML </template>
+        <style>Css </style>
+
+```
+#### 👉Template   
+  - Each ***.vue** file can contain at most one top-level `<template>` block at a time.
+  - Contents will be extracted and passed on to @vue/compiler-dom, pre-compiled into Javascript render functions, and attached to the exported component as it s render option.    
+
+#### 👉`<script>` 
+  - Each ***.vue** file can contain at most one `<script>` block at a time (excluding `<script setup>`).
+  - The script is executed as an ES Module.
+  - The default export should be a Vue component options object, either as a plain object or as the reuturn value of defileComponent.
+    
+    `Example :- `  
+     
+     ```javascript
+          <script>
+          <script lang="ts">
+          <script setup>
+     ```
+#### 👉`<style>` 
+-  A single ***.vue** file can contain multiple `<style>` tags.
+- A `<style>` tag can have scoped or module attributes to help encapsulate the styles to the current component. Multiple `<style>` tags with different encapsulation modes can be mixed in the same component.
+
+`Example :- ` 
+
+```javascript
+   <style>
+   <style scoped>
+   <style lang="scss">
+
+```
+#### 👉 Src Import
+- If you prefer splitting up your ***.vue** components into multiple files, you can use the src attribute to import an external file for a language block. 
+- It's Relative paths need to start with ./
+```javascript
+   <template src="./template.html"></template>
+   <style src="./style.css"></style>
+   <script src="./script.js"></script>
+```
+
+### ✴️Defining a Component
+```javascript
+   FileName.vue
+   <script setup>
+    //imports
+    //properties
+    // Methods
+   </script>
+   <template>
+     Html Here we get access to Properties and Methods Child Components which we have imported
+   </template>
+   <style scoped> CSS </style>
+```  
+
+`Example:- `
+
+```javascript
+    HelloWorld.vue
+    <script setup>
+      const msg = "Hello World"
+    </script>
+
+    <template>
+       <h1>{{ msg }}</h1>
+    </template>
+
+    <style scoped>
+      h1{ font-size: 1.8rem;}
+    </style>  
+```
+### ✴️Register & Use a Component
+
+- A Vue component needs to be "registered" so that Vue Knows where to locate its implementation when it is encounted in a template. There are two ways to register components:-
+   - **Local**
+   - **Global**
+
+  #### 👉Local
+    - Local registration scopes the availabily of the registered components to the current component only.
+    - It makes the dependency relationship more explicit, and is more tree-shaking friendly.
+    `Example :- `  
+    ```javascript
+         <script setup>
+          import ComponentA from './ComponentA.vue'
+         </script>
+         <template>
+          <ComponentA />
+         </template>
+    ```
+
+  #### 👉Component Naming Convention
+
+  - We can use PascalCase names when registering components.
+    `Example:- <HelloWorld />`  
+  - A component registered as MyComponent can be referenced in the template via both `<MyComponent> and <my-component>`.  
+
+  #### 👉Global
+  - We can make components available globally in the current Vue application using the **app.component()** method.
+  - Globally registered components can be used in the template of any component within this application.
+
+  `Example:- `
+
+  ```javascript
+    main.js
+    import ComponentA from './ComponentA.vue'
+    app.component('ComponentA',ComponentA)
+    app
+    .component('ComponentA',ComponentA)
+    .component('ComponentB',ComponentB)
+    .component('ComponentC',ComponentC)
+
+
+
+   Globally registered components can be used in the template of any component within this application.
+
+   <ComponentA />
+   <ComponentB />
+   <ComponentC />
+  ```
+
+  #### 👉Disadvantages of Global Registration
+  - Global registration prevents build systems from removing unused components (a.k.a "tree-shaking"). if you globally register a component but end up not using it anywhere in your app, it will still be included in the final bundle.
+  - Global registration make dependency relationships less explicit in large applications. its makes it difficult to locate a child component's implementation from a parent component using it. This can affect long-term maintainabiliy similar to using too many global variables.
+  
+## ⭐Text Interpolation
+
+- Text Interpolation is a form of data binding. We can bind simple Property Key and JavaScript Expression in our template using Text Interpolation.
+- Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data.
+- Under the hood, Vue compiles the templates into highly-optimized Javascript code.
+
+`Syntax :- {{ property }}`  
+`Example :- `
+  - `<h1> {{ msg }} </h1>`
+  - `<h1> {{ num + 10 }} </h1>`
+  - `<h1> {{ on ? 'dark' : 'light' }} </h1>`
+  - `<h1> {{ formatDate(date) }} </h1>`
+  - `<h1> {{ message.split(").reverse().join(") }} </h1>`
+
+ `Not Do This :- ` 
+    - `{{ var a = 1}}`
+    - `{{ if(ok) { return message }}}`
+    

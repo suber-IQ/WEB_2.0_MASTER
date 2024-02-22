@@ -165,3 +165,5 @@
 ### ✴️Which one Use for Production
   - Go with Options API if you are not using build tools,or plan to use Vue primary in low-complexity scenarios, e.g. progrerssive enchancement.
   - Go with Composition API + Single-File Components if you plan to build full applications with vue.
+
+## ⭐What is Component

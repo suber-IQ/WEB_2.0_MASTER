@@ -317,7 +317,6 @@
   - `<h1> {{ formatDate(date) }} </h1>`
   - `<h1> {{ message.split(").reverse().join(") }} </h1>`
 
- `Not Do This :- ` 
-    - `{{ var a = 1}}`
-    - `{{ if(ok) { return message }}}`
-    
+ `Not Do This :- `
+  - `<h1> {{ var a = 10}} </h1>`
+  - `<h1> {{ if(ok) { return message } }} </h1>`

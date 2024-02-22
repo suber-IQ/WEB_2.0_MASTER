@@ -171,7 +171,7 @@
  ### ✴️What is Vue Component
  - Vue components are written as a combination of Javascript objects that manage the app's data and an HTML-based template syntax that maps to the underlying DOM structure.
 
- ### ✴️What is Vue Component
+ ### ✴️Vue Single-File Components
   - Vue Single-File Components (SFC) a.k.a. ***.vue** files is a special file format that allows us to encapsulate the template(HTML),logic (JavaScript), and styling (CSS) of a Vue component in a single file.
 
   `Syntax :-`  
